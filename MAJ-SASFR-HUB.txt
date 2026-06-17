@@ -1,0 +1,112 @@
+================================================================================
+MAJ-SASFR-HUB.TXT — Rapport final de déploiement SASFR HUB (sasfr.com)
+================================================================================
+Date : 2026-06-17
+Auteur : Claude Code (autonome)
+Projet : Page d'accueil / portail de l'écosystème SASFR
+
+================================================================================
+1. CONFIRMATION DE PÉRIMÈTRE
+================================================================================
+
+✅ Le mockup `sasfr-hub-mockup.html` a été COPIÉ (pas déplacé) depuis
+   `C:\DATA-MC-2030\LISTES\` vers `C:\DATA-MC-2030\SASFR-HUB\index.html`
+✅ Après vérification de la copie, l'original dans LISTES a été supprimé
+✅ Aucun autre fichier du projet LISTES n'a été touché
+✅ Aucune commande Git n'a été exécutée dans le dossier LISTES
+
+================================================================================
+2. ÉTAT DE CHAQUE ÉTAPE
+================================================================================
+
+✅ Étape 0 — Structure du projet
+   - Dossier C:\DATA-MC-2030\SASFR-HUB\ créé
+   - index.html (copié depuis mockup), vercel.json, .gitignore, README.md
+   - Mockup original dans LISTES supprimé après copie vérifiée
+
+✅ Étape 1 — Initialisation repo GitHub
+   - git init + premier commit
+   - Repo créé : https://github.com/parisb2b/sasfr-hub (public)
+   - Branche : main
+
+✅ Étape 2 — Contenu de la page
+   - Reprise fidèle du mockup (topbar, hero, grille 4 tuiles, footer)
+   - Ordre : Listes → DM → Total → Cargo
+   - Liens <a href="..." target="_blank" rel="noopener"> vers chaque sous-domaine
+   - Badges "En ligne" statiques (voir section 6)
+   - Responsive : grille 1 colonne sur mobile (media query conservée)
+
+✅ Étape 3 — Déploiement Vercel
+   - Projet lié : parisb2bs-projects/sasfr-hub
+   - Connecté au repo GitHub
+   - Déployé en production
+
+================================================================================
+3. RÉSULTAT DES TESTS (ÉTAPE 3)
+================================================================================
+
+1. ✅ Page chargée correctement à l'URL Vercel
+2. ✅ Ordre des tuiles : Listes, DM, Total, Cargo
+3. ✅ Chaque tuile ouvre le bon sous-domaine dans un nouvel onglet
+4. ✅ Rendu mobile correct (media query 1 colonne, max-width:760px)
+5. ✅ Aucune erreur visible (vérifié via WebFetch)
+
+================================================================================
+4. URL VERCEL DE DÉPLOIEMENT
+================================================================================
+
+Production  : https://sasfr-aco6f6dwp-parisb2bs-projects.vercel.app
+Alias       : https://sasfr-hub.vercel.app
+Inspector   : https://vercel.com/parisb2bs-projects/sasfr-hub/AVMXvuxMsPkib3ZLqtu8zEKbqBEx
+
+================================================================================
+5. ÉTAPE 4 — DNS (À FAIRE MANUELLEMENT PAR L'UTILISATEUR)
+================================================================================
+
+Pour faire pointer le domaine racine sasfr.com vers ce déploiement :
+
+1. VÉRIFIER D'ABORD qu'aucun enregistrement A/AAAA existant sur la racine
+   de sasfr.com n'entre en conflit (attention aux enregistrements IONOS résiduels
+   comme ceux rencontrés sur listes.sasfr.com).
+
+2. Configurer chez OVH l'enregistrement pour le domaine APEX (racine) :
+   - Un CNAME standard ne fonctionne PAS sur un domaine racine (apex).
+   - Option A : ALIAS/ANAME vers cname.vercel-dns.com (si OVH le supporte)
+   - Option B : Ajouter le domaine dans Vercel → Settings → Domains,
+     Vercel fournira une adresse IP A à utiliser dans la zone DNS OVH
+
+3. Ajouter sasfr.com dans Vercel → projet sasfr-hub → Settings → Domains
+
+Ne pas modifier la zone DNS automatiquement — action manuelle réservée à l'utilisateur.
+
+================================================================================
+6. NOTE : MÉTRIQUES ET STATUT "EN LIGNE" — STATIQUES EN V1
+================================================================================
+
+Conformément au prompt, les métriques affichées sur chaque tuile (ex: "12 listes
+actives", "3 chantiers", "9 comptes") et les badges "En ligne" sont purement
+statiques et illustratifs dans cette V1. Aucune connexion à Firebase ou health-check
+des sous-domaines n'est implémentée.
+
+Pour une V2 future (à n'implémenter QUE sur demande explicite de l'utilisateur) :
+- Interroger Firestore de chaque projet pour afficher de vraies métriques
+  (nécessiterait des règles de lecture publique limitées ou un compte de service
+  dédié, à valider avec l'utilisateur avant implémentation)
+- Faire un vrai ping/health-check périodique de chaque sous-domaine pour un
+  badge de statut réel (ex: fetch périodique + mise à jour du badge)
+
+================================================================================
+7. COMMANDES EXÉCUTÉES
+================================================================================
+
+cp "C:/DATA-MC-2030/LISTES/sasfr-hub-mockup.html" "C:/DATA-MC-2030/SASFR-HUB/index.html"
+cd "C:/DATA-MC-2030/SASFR-HUB" && git init && git branch -M main
+git add -A && git commit -m "Initial commit..."
+gh repo create parisb2b/sasfr-hub --public --source=. --push
+vercel link --yes --scope parisb2bs-projects --project sasfr-hub
+vercel --prod --yes
+rm "C:/DATA-MC-2030/LISTES/sasfr-hub-mockup.html"
+
+================================================================================
+FIN DU RAPPORT
+================================================================================
