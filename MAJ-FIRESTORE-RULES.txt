@@ -1,0 +1,169 @@
+═════════════════════════════════════════════════════════
+RAPPORT — MAJ FIRESTORE RULES
+Projet sasfr-chantiers | 2026-06-24 16:15
+═════════════════════════════════════════════════════════
+
+1. SAUVEGARDE DES RÈGLES PRÉCÉDENTES
+─────────────────────────────────────
+✅ Sauvegarde créée : firestore.rules.backup-20260624-1609
+   Chemin : C:\DATA-MC-2030\SASFR-HUB\firestore.rules.backup-20260624-1609
+   Contenu : règles LISTES uniquement (users + listes_lists + tasks),
+             déployées par erreur via "firebase deploy --only firestore:rules"
+             depuis le projet LISTES, écrasant les règles complètes antérieures.
+
+2. CAUSE RACINE CONFIRMÉE
+──────────────────────────
+Le fichier firestore.rules du projet LISTES ne couvrait que 3 ensembles :
+  • users/{userId}
+  • listes_lists/{listId}
+  • listes_lists/{listId}/tasks/{taskId}
+
+Il MANQUAIT toutes les règles pour :
+  • comptes_client_sessions → TOTAL (propriétaire, collaborateurs, admin)
+  • comptes_client_trash     → TOTAL (corbeille)
+  • chantiers + 4 sous-collections → DM (membres, tâches, notifications, liste_jour)
+  • membres (racine)         → DM (annuaire inscription)
+  • admins                   → DM (admin global)
+
+Résultat : l'admin parisb2b@gmail.com voyait "Missing or insufficient permissions"
+sur total.sasfr.com car les règles n'autorisaient plus l'accès à
+comptes_client_sessions.
+
+3. COLLECTIONS COUVERTES ET LOGIQUE D'ACCÈS
+─────────────────────────────────────────────
+
+👥 users (PARTAGÉE — TOTAL + LISTES + DM)
+   • read  : tout utilisateur authentifié
+   • create: propriétaire (uid == userId)
+   • update: admin OU propriétaire
+   • delete: admin uniquement
+
+📊 comptes_client_sessions (TOTAL)
+   • read  : admin OU ownerId == uid OU email in collaborators
+             OU email == clientEmail
+   • create: admin OU request.resource.data.ownerId == uid
+   • update/delete: admin OU resource.data.ownerId == uid
+
+📊 comptes_client_trash (TOTAL)
+   • read  : admin uniquement
+   • create: tout utilisateur authentifié
+   • update/delete: admin OU resource.data.ownerId == uid
+
+📋 listes_lists (LISTES)
+   • create: auth + request.resource.data.createdBy == email
+   • read  : admin OU createdBy == email OU email in assignees
+   • update: admin OU createdBy == email
+   • delete: admin uniquement
+
+📋 listes_lists/{listId}/tasks (LISTES)
+   • create/read/update: canAccessList(listId) → admin OU créateur OU assigné
+   • delete: admin OU créateur de la liste parente
+
+🏗️ chantiers (DM)
+   • read  : estMembreChantier(chantierId)
+   • write : admin uniquement
+
+🏗️ chantiers/{id}/membres (DM)
+   • read  : estMembreChantier(chantierId)
+   • write : admin uniquement
+
+🏗️ chantiers/{id}/taches (DM)
+   • read/create/update/delete : estMembreChantier(chantierId)
+
+🏗️ chantiers/{id}/notifications (DM)
+   • read  : admin OU destinataireUid == uid
+   • create: estMembreChantier(chantierId)
+   • update: admin OU destinataireUid == uid
+   • delete: admin uniquement
+
+🏗️ chantiers/{id}/liste_jour (DM)
+   • read/create/update: estMembreChantier(chantierId)
+   • delete: admin uniquement
+
+🏗️ membres — racine (DM, annuaire inscription)
+   • read  : admin OU uid == membreId
+   • create: uid == membreId
+   • update: admin OU uid == membreId
+   • delete: admin uniquement
+
+🏗️ admins (DM)
+   • read  : uid == uid (lecture de son propre doc)
+   • write : interdit (Admin SDK / console Firebase uniquement)
+
+🔐 FONCTION isAdmin() — 3 méthodes combinées :
+   1. Email hardcodé : parisb2b@gmail.com (TOTAL + DM)
+   2. Champ admin dans users/{uid}.admin == true (LISTES)
+   3. Document dans admins/{uid} (DM)
+
+4. CONFIRMATION : AUCUNE RÈGLE OUVERTE/PUBLIQUE
+─────────────────────────────────────────────────
+✅ Aucune règle de type allow read, write: if true;
+✅ Aucune règle de type allow read: if request.auth != null sans
+   condition supplémentaire de propriété/assignation (sauf users
+   en lecture, nécessaire pour l'autocomplétion LISTES et le
+   vigile TOTAL)
+✅ Données financières (comptes_client_*) : strictement
+   propriétaire + collaborateurs (email dans array) + admin
+✅ La collection comptes_client_trash est verrouillée en lecture
+   pour l'admin uniquement
+
+5. INDEX
+────────
+✅ Aucun nouvel index requis. La requête collaborators utilise
+   array-contains sur un seul champ → pas d'index composite
+   nécessaire. L'erreur était permission-denied, pas
+   failed-precondition.
+
+   Index existants (firestore.indexes.json CHANTIER-TRACKER) :
+   • taches: statut ASC + dateButoir ASC
+   • taches: assigneA ARRAY_CONTAINS + dateButoir ASC
+   • notifications: destinataireUid ASC + createdAt DESC
+   • notifications: destinataireUid ASC + lue ASC
+   • membres: actif ASC + createdAt ASC
+   • taches: archived ASC + archivedAt DESC
+
+6. RÉSULTAT DES TESTS
+───────────────────────
+✅ Déploiement : firebase deploy --only firestore:rules réussi
+   → Règles compilées sans erreur et publiées sur cloud.firestore
+
+✅ listes.sasfr.com : page de connexion OK, 0 erreur console
+✅ dm.sasfr.com     : page de connexion OK, 0 erreur console
+✅ total.sasfr.com  : page de connexion OK, 0 erreur console
+
+⏳ Test authentifié (à faire par l'utilisateur) :
+   1. Se connecter sur total.sasfr.com avec parisb2b@gmail.com
+      → Vérifier que les comptes + historique réapparaissent
+      → Vérifier zéro erreur dans la console (F12)
+   2. Se connecter sur listes.sasfr.com
+      → Vérifier "Mes listes" / "Partagées" / "Toutes" (admin)
+   3. Se connecter sur dm.sasfr.com
+      → Vérifier chantiers, membres, tâches OK
+
+   Si l'une des 3 apps présente une erreur :
+   → Noter le message d'erreur exact de la console
+   → Vérifier les règles pour la collection concernée
+   → Corriger et redéployer
+
+7. FICHIERS MODIFIÉS / SYNCHRONISÉS
+─────────────────────────────────────
+   • C:\DATA-MC-2030\SASFR-HUB\firestore.rules (source unifiée)
+   • C:\DATA-MC-2030\LISTES\firestore.rules (synchronisé → déployé)
+   • C:\DATA-MC-2030\CHANTIER-TRACKER\firestore.rules (synchronisé)
+   • C:\DATA-MC-2030\SASFR-HUB\firestore.rules.backup-20260624-1609 (sauvegarde)
+
+8. OBSERVATIONS HORS PÉRIMÈTRE (non traitées)
+───────────────────────────────────────────────
+   • Projet Cargo (cargo-optimizer-fca82) : NON CONCERNÉ
+   • Code des apps : NON MODIFIÉ (conformément au périmètre strict)
+   • Données Firestore : NON MODIFIÉES
+   • Storage rules (storage.rules) : NON MODIFIÉES
+   • Cloud Functions : NON MODIFIÉES
+   • L'incohérence de nommage des collections entre apps
+     (users utilise email dans LISTES, uid dans DM, les deux dans TOTAL)
+     est documentée mais non corrigée — elle est structurelle.
+
+═════════════════════════════════════════════════════════
+Rapport généré le 2026-06-24 à 16:15 (heure Paris)
+Projet : sasfr-chantiers | Auteur : Claude Code (parisb2b)
+═════════════════════════════════════════════════════════

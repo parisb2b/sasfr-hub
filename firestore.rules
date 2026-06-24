@@ -1,0 +1,267 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ═══════════════════════════════════════════════════════
+    // 🔐 FONCTIONS UTILITAIRES — Admin global (3 méthodes)
+    // ═══════════════════════════════════════════════════════
+
+    // Méthode 1 : email hardcodé (TOTAL + DM)
+    function isAdminEmail() {
+      return request.auth != null
+        && request.auth.token.email.lower() == 'parisb2b@gmail.com';
+    }
+
+    // Méthode 2 : champ admin dans le doc users (LISTES)
+    function isAdminViaUsers() {
+      return request.auth != null
+        && exists(/databases/$(database)/documents/users/$(request.auth.uid))
+        && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.admin == true;
+    }
+
+    // Méthode 3 : document dans la collection admins (DM)
+    function isAdminViaAdmins() {
+      return request.auth != null
+        && exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+
+    // Admin global — combine les 3 méthodes
+    function isAdmin() {
+      return isAdminEmail() || isAdminViaUsers() || isAdminViaAdmins();
+    }
+
+    // ═══════════════════════════════════════════════════════
+    // 👥 COLLECTION users — PARTAGÉE (TOTAL + LISTES + DM)
+    // ═══════════════════════════════════════════════════════
+    match /users/{userId} {
+      // Lecture : tout utilisateur authentifié (autocomplétion LISTES,
+      // vigile TOTAL, vérification profil DM)
+      allow read: if request.auth != null;
+
+      // Création : l'utilisateur crée son propre document
+      allow create: if request.auth != null
+        && request.auth.uid == userId;
+
+      // Mise à jour : admin ou propriétaire (blocage/déblocage ADMIN,
+      // mise à jour profil LISTES)
+      allow update: if request.auth != null
+        && (isAdmin() || request.auth.uid == userId);
+
+      // Suppression : admin uniquement
+      allow delete: if request.auth != null && isAdmin();
+    }
+
+    // ═══════════════════════════════════════════════════════
+    // 📊 SECTION TOTAL — Comptes Clients
+    // ═══════════════════════════════════════════════════════
+
+    match /comptes_client_sessions/{docId} {
+      // Lecture : propriétaire, collaborateur, clientEmail, ou admin
+      // Requêtes client utilisées :
+      //   .where('ownerId','==',uid).onSnapshot()
+      //   .where('collaborators','array-contains',email).onSnapshot()
+      //   .where('clientEmail','==',email).get()
+      //   .doc(id).onSnapshot()
+      //   .onSnapshot() (admin backoffice)
+      allow read: if request.auth != null && (
+        isAdmin()
+        || resource.data.ownerId == request.auth.uid
+        || request.auth.token.email.lower() in resource.data.collaborators
+        || request.auth.token.email.lower() == resource.data.clientEmail.lower()
+      );
+
+      // Création : propriétaire ou admin
+      // Requête client : sessionsRef.doc(uid()).set({ownerId, ownerEmail, ...})
+      allow create: if request.auth != null && (
+        isAdmin()
+        || request.resource.data.ownerId == request.auth.uid
+      );
+
+      // Mise à jour / Suppression : propriétaire OU admin
+      // Requêtes client :
+      //   .update({entries, name, collaborators via arrayUnion, ...})
+      //   .delete() (suppression vers corbeille)
+      allow update, delete: if request.auth != null && (
+        isAdmin()
+        || resource.data.ownerId == request.auth.uid
+      );
+    }
+
+    match /comptes_client_trash/{docId} {
+      // Lecture : admin uniquement (backup/restauration ADMIN)
+      allow read: if request.auth != null && isAdmin();
+
+      // Création : tout utilisateur authentifié (sauvegarde avant
+      // suppression définitive d'un dossier ou d'une transaction)
+      allow create: if request.auth != null;
+
+      // Mise à jour / Suppression : admin ou propriétaire du document
+      allow update, delete: if request.auth != null && (
+        isAdmin()
+        || resource.data.ownerId == request.auth.uid
+      );
+    }
+
+    // ═══════════════════════════════════════════════════════
+    // 📋 SECTION LISTES — Gestion de listes collaboratives
+    // ═══════════════════════════════════════════════════════
+
+    // Vérifie l'accès à une liste (créateur, assigné, ou admin)
+    // Utilisée pour les règles de tasks (sous-collection)
+    function canAccessList(listId) {
+      let list = get(/databases/$(database)/documents/listes_lists/$(listId));
+      return isAdmin()
+        || list.data.createdBy.lower() == request.auth.token.email.lower()
+        || request.auth.token.email.lower() in list.data.assignees;
+    }
+
+    match /listes_lists/{listId} {
+      // Création : tout utilisateur authentifié, en forçant createdBy = email
+      // Requête client : listsRef.add({createdBy, name, assignees, ...})
+      allow create: if request.auth != null
+        && request.resource.data.createdBy.lower() == request.auth.token.email.lower();
+
+      // Lecture : créateur OU assigné OU admin
+      // Requêtes client :
+      //   listsRef.onSnapshot() (admin)
+      //   listsRef.where('createdBy','==',email).onSnapshot()
+      //   listsRef.where('assignees','array-contains',email).onSnapshot()
+      allow read: if request.auth != null && (
+        isAdmin()
+        || resource.data.createdBy.lower() == request.auth.token.email.lower()
+        || request.auth.token.email.lower() in resource.data.assignees
+      );
+
+      // Mise à jour : créateur OU admin (modifier nom, archiver, gérer assignees)
+      // Requêtes client : listsRef.doc(id).update({...})
+      allow update: if request.auth != null && (
+        isAdmin()
+        || resource.data.createdBy.lower() == request.auth.token.email.lower()
+      );
+
+      // Suppression : admin uniquement (suppression définitive depuis corbeille)
+      allow delete: if request.auth != null && isAdmin();
+    }
+
+    // Sous-collection tasks — hérite de la visibilité de la liste parente
+    match /listes_lists/{listId}/tasks/{taskId} {
+      // Création : toute personne ayant accès à la liste parente
+      // Requête client : listsRef.doc(listId).collection('tasks').add({...})
+      allow create: if canAccessList(listId);
+
+      // Lecture : mêmes règles que la liste parente
+      // Requête client : listsRef.doc(listId).collection('tasks').onSnapshot()
+      allow read: if canAccessList(listId);
+
+      // Mise à jour : toute personne ayant accès à la liste parente
+      // Requêtes client : .update({status, fav, updatedAt})
+      allow update: if canAccessList(listId);
+
+      // Suppression : créateur de la liste parente OU admin
+      // Requêtes client : batch.delete(ref) (mode suppression multiple)
+      allow delete: if request.auth != null && (
+        isAdmin()
+        || get(/databases/$(database)/documents/listes_lists/$(listId))
+           .data.createdBy.lower() == request.auth.token.email.lower()
+      );
+    }
+
+    // ═══════════════════════════════════════════════════════
+    // 🏗️ SECTION DM — Chantier Tracker
+    // ═══════════════════════════════════════════════════════
+
+    // Vérifie si l'utilisateur est membre du chantier (admin OU doc dans membres)
+    function estMembreChantier(chantierId) {
+      return request.auth != null && (
+        isAdmin()
+        || exists(/databases/$(database)/documents/chantiers/$(chantierId)/membres/$(request.auth.uid))
+      );
+    }
+
+    // Collection racine membres — annuaire d'inscription (avant affectation chantier)
+    // Requêtes client :
+    //   setDoc(doc(db,'membres',user.uid),{...}) (auth.js inscription)
+    match /membres/{membreId} {
+      allow read: if request.auth != null && (
+        isAdmin() || request.auth.uid == membreId
+      );
+      allow create: if request.auth != null
+        && request.auth.uid == membreId;
+      allow update: if request.auth != null && (
+        isAdmin() || request.auth.uid == membreId
+      );
+      allow delete: if request.auth != null && isAdmin();
+    }
+
+    // Collection racine admins — gérée manuellement (console Firebase)
+    // Requête client : getDoc(doc(db,'admins',uid)) (vérification admin)
+    match /admins/{uid} {
+      allow read: if request.auth != null && request.auth.uid == uid;
+      allow write: if false; // Admin SDK / console Firebase uniquement
+    }
+
+    // ──── Chantiers et sous-collections ────
+
+    match /chantiers/{chantierId} {
+      // Lecture : membres du chantier (y compris admin)
+      // Requêtes client :
+      //   getDocs(collection(db,'chantiers')) / onSnapshot (admin + dashboard)
+      //   getDoc(doc(db,'chantiers',id)) / onSnapshot (taches.js ecouterChantier)
+      allow read: if estMembreChantier(chantierId);
+
+      // Écriture : admin global uniquement
+      // Requêtes client : addDoc, updateDoc, deleteDoc (gestion admin)
+      allow write: if isAdmin();
+
+      // ── Sous-collection : membres du chantier ──
+      match /membres/{membreId} {
+        allow read: if estMembreChantier(chantierId);
+        // Écriture via Cloud Functions (Admin SDK) ou admin global
+        allow write: if isAdmin();
+      }
+
+      // ── Sous-collection : tâches ──
+      // Requêtes client :
+      //   onSnapshot(query(...,where('assigneA','array-contains',uid)...))
+      //   onSnapshot(query(...,where('archived','==',true)...))
+      //   addDoc, updateDoc (pas de deleteDoc direct, soft-delete via archive)
+      match /taches/{tacheId} {
+        allow read: if estMembreChantier(chantierId);
+        allow create: if estMembreChantier(chantierId);
+        allow update: if estMembreChantier(chantierId);
+        allow delete: if estMembreChantier(chantierId);
+      }
+
+      // ── Sous-collection : notifications ──
+      // Requêtes client :
+      //   onSnapshot(query(...,where('destinataireUid','==',uid)...))
+      //   addDoc (Cloud Functions cron notifications)
+      //   updateDoc (marquer comme lue)
+      match /notifications/{notifId} {
+        allow read: if request.auth != null && (
+          isAdmin()
+          || resource.data.destinataireUid == request.auth.uid
+        );
+        allow create: if estMembreChantier(chantierId);
+        allow update: if request.auth != null && (
+          isAdmin()
+          || resource.data.destinataireUid == request.auth.uid
+        );
+        allow delete: if isAdmin();
+      }
+
+      // ── Sous-collection : liste_jour ──
+      // Requêtes client :
+      //   onSnapshot(collection(...))
+      //   setDoc / addDoc (création tâche journalière)
+      //   updateDoc (statut, favori, archive)
+      //   getDocs (exports TXT/PDF/CSV)
+      match /liste_jour/{docId} {
+        allow read: if estMembreChantier(chantierId);
+        allow create: if estMembreChantier(chantierId);
+        allow update: if estMembreChantier(chantierId);
+        allow delete: if isAdmin();
+      }
+    }
+  }
+}
