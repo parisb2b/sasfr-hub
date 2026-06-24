@@ -1,0 +1,112 @@
+═══════════════════════════════════════════════════════════════
+RAPPORT — MAJ SSO HUB
+Chantier : Authentification unifiée (SSO) sur sasfr.com
+Date de début : 2026-06-24
+═══════════════════════════════════════════════════════════════
+
+───────────────────────────────────────────────────────────────
+PHASE 0 — SAUVEGARDE GLOBALE ET INVENTAIRE
+Statut : ✅ TERMINÉE — 2026-06-24 16:17
+───────────────────────────────────────────────────────────────
+
+1. SAUVEGARDES CODE SOURCE (ZIP horodatés)
+   Répertoire : C:\DATA-MC-2030\BACKUPS\SSO-PHASE0-20260624-1617\
+   ✅ HUB.zip     — 0.03 Mo (index.html + vercel.json + configs)
+   ✅ TOTAL.zip   — 29.6 Mo (app.html, admin.html, js/, api/, node_modules)
+   ✅ LISTES.zip  — 0.13 Mo (index.html, firebase-config.js, firestore.rules)
+   ✅ DM.zip      — 46.0 Mo (dashboard.html, public/, functions/, node_modules)
+   ✅ CARGO.zip   — 78.1 Mo (index.html, libs/, backups, Excel/PDF)
+
+2. INVENTAIRE CONFIG FIREBASE DE CHAQUE APP
+
+   ┌──────────┬────────────────────────────────┬──────────────────────────────────┬─────────────┐
+   │ App      │ Projet Firebase                │ apiKey (6 premiers...derniers)    │ Auth mode   │
+   ├──────────┼────────────────────────────────┼──────────────────────────────────┼─────────────┤
+   │ TOTAL    │ sasfr-chantiers                │ AIzaSy...RMWr058                  │ Email/MDP   │
+   │          │ authDomain: sasfr-chantiers    │                                  │ + Google    │
+   ├──────────┼────────────────────────────────┼──────────────────────────────────┼─────────────┤
+   │ LISTES   │ sasfr-chantiers                │ AIzaSy...RMWr058                  │ Email/MDP   │
+   │          │ authDomain: sasfr-chantiers    │                                  │ + Google    │
+   ├──────────┼────────────────────────────────┼──────────────────────────────────┼─────────────┤
+   │ DM       │ sasfr-chantiers                │ AIzaSy...RMWr058                  │ Email/MDP   │
+   │          │ authDomain: sasfr-chantiers    │                                  │ (pas Google)│
+   ├──────────┼────────────────────────────────┼──────────────────────────────────┼─────────────┤
+   │ CARGO    │ cargo-optimizer-fca82 ⚠️       │ AIzaSy...sNe2Y                    │ ANONYME ⚠️  │
+   │          │ authDomain: cargo-optimizer    │                                  │             │
+   ├──────────┼────────────────────────────────┼──────────────────────────────────┼─────────────┤
+   │ HUB      │ Aucun (page statique)          │ N/A                              │ N/A         │
+   │          │                                │                                  │             │
+   └──────────┴────────────────────────────────┴──────────────────────────────────┴─────────────┘
+
+   ⚠️ 3 apps (TOTAL, LISTES, DM) partagent déjà le même projet sasfr-chantiers
+      → MÊME apiKey, MÊME authDomain → condition SSO satisfaite pour ces 3
+   ⚠️ CARGO est sur un projet SÉPARÉ → DOIT être migré (Phase 2)
+   ⚠️ CARGO utilise l'auth ANONYME → DOIT passer à auth réelle (Phase 2)
+
+3. INVENTAIRE COLLECTIONS FIRESTORE
+
+   Projet sasfr-chantiers :
+   ┌───────────────────────────────┬──────────┬──────────────────────────────────┐
+   │ Collection                    │ App      │ Règles (Prompt 1)                │
+   ├───────────────────────────────┼──────────┼──────────────────────────────────┤
+   │ users                         │ PARTAGÉE │ read: auth, write: admin/propre  │
+   │ comptes_client_sessions       │ TOTAL    │ ownerId + collaborators + admin  │
+   │ comptes_client_trash          │ TOTAL    │ create: auth, read: admin        │
+   │ listes_lists                  │ LISTES   │ createdBy + assignees + admin    │
+   │ listes_lists/{id}/tasks       │ LISTES   │ hérite liste parente             │
+   │ chantiers                     │ DM       │ membre chantier + admin          │
+   │ chantiers/{id}/membres        │ DM       │ membre chantier                  │
+   │ chantiers/{id}/taches         │ DM       │ membre chantier                  │
+   │ chantiers/{id}/notifications  │ DM       │ destinataireUid + admin          │
+   │ chantiers/{id}/liste_jour     │ DM       │ membre chantier                  │
+   │ membres (racine)              │ DM       │ admin + propre                   │
+   │ admins                        │ DM       │ read: propre, write: interdit    │
+   └───────────────────────────────┴──────────┴──────────────────────────────────┘
+
+   Projet cargo-optimizer-fca82 ⚠️ (à migrer) :
+   ┌───────────────────────┬──────────────────────────────────────────────┐
+   │ Collection            │ Règles actuelles (⚠️ à sécuriser après migration) │
+   ├───────────────────────┼──────────────────────────────────────────────┤
+   │ cargo_sessions        │ allow read, write: if true; ← OUVERT !       │
+   │ cargo_config          │ allow read: if true; ← OUVERT !              │
+   │ cargo_config/regles_dor│ doc spécifique contenant les règles métier   │
+   └───────────────────────┴──────────────────────────────────────────────┘
+
+4. IDENTIFIANTS TECHNIQUES
+
+   sasfr-chantiers :
+   - Project ID : sasfr-chantiers
+   - Auth Domain : sasfr-chantiers.firebaseapp.com
+   - apiKey : AIzaSyDuMelJjjPWDnJOj8_rnehddcQxRMWr058
+   - Service Account : sasfr-chantiers-firebase-adminsdk-fbsvc-b3e958fc2a.json
+   - Domaines autorisés (Firebase Auth) : à vérifier/étendre
+
+   cargo-optimizer-fca82 :
+   - Project ID : cargo-optimizer-fca82
+   - Auth Domain : cargo-optimizer-fca82.firebaseapp.com
+   - apiKey : AIzaSyDyk2XwTDY2tjbnUsVRI-hg3jptd9sNe2Y
+   - Auth : anonyme (signInAnonymously)
+
+5. EXPORT FIRESTORE (filet de sécurité)
+
+   ⚠️ Export Firestore natif (gcloud firestore export) nécessite un bucket GCS
+      et billing activé — non disponible sans configuration préalable.
+
+   Alternative : un script Node.js de dump utilisant l'Admin SDK sera créé
+   en Phase 2 (avant migration Cargo) pour exporter toutes les données
+   des 2 projets au format JSON.
+
+6. ÉTAT GO/NO-GO POUR LA PHASE SUIVANTE
+   ✅ GO pour Phase 1 — Page de connexion sur le hub sasfr.com
+   → Sauvegardes OK, inventaire complet, configs documentées.
+   → Aucun risque pour les apps existantes (le hub n'a pas d'auth actuellement).
+   → POINT D'ARRÊT — Attendre confirmation utilisateur avant de lancer Phase 1.
+
+───────────────────────────────────────────────────────────────
+PROCHAINES PHASES (aperçu)
+───────────────────────────────────────────────────────────────
+Phase 1 : Ajout auth sur le hub sasfr.com (brancher sur sasfr-chantiers)
+Phase 2 : Migration Cargo (cargo-optimizer-fca82 → sasfr-chantiers) ⚠️ RISQUÉ
+Phase 3 : SSO inter-sous-domaines (session partagée)
+Phase 4 : Gestion centralisée des comptes sur le hub
+═══════════════════════════════════════════════════════════════
