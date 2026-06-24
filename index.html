@@ -306,6 +306,30 @@ a{text-decoration:none;color:inherit;}
   </div>
 
   <div class="footer-note">Écosystème SASFR · sasfr.com — connecté en session unique sur tous les outils.</div>
+
+  <!-- ═══════ ADMIN PANEL (visible uniquement pour admin) ═══════ -->
+  <div id="admin-panel" style="display:none;max-width:1100px;margin:0 auto;padding:0 28px 60px;">
+    <div style="background:var(--bg-card);border:2px solid #7c3aed;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(124,58,237,.08);">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;">
+        <h2 style="font-size:18px;font-weight:700;margin:0;">⚙️ Administration — Gestion des comptes</h2>
+        <span style="font-size:12px;color:var(--text-muted);" id="admin-user-count"></span>
+      </div>
+      <div style="overflow-x:auto;">
+        <table style="width:100%;border-collapse:collapse;font-size:13px;">
+          <thead>
+            <tr style="text-align:left;border-bottom:2px solid #e5e7eb;">
+              <th style="padding:10px 12px;">Email</th>
+              <th style="padding:10px 12px;">Statut</th>
+              <th style="padding:10px 12px;">Rôle</th>
+              <th style="padding:10px 12px;">Créé le</th>
+              <th style="padding:10px 12px;">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="admin-users-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="toast" id="toast"><span id="toast-msg"></span></div>
@@ -448,10 +472,14 @@ auth.onAuthStateChanged(function(user) {
     document.getElementById('screen-login').classList.remove('active');
     document.getElementById('screen-main').classList.add('active');
     document.getElementById('user-display').textContent = user.email || 'Utilisateur';
+
+    // Charger le panel admin si autorisé
+    startAdminPanel(user);
   } else {
     // Afficher l'écran de connexion
     document.getElementById('screen-main').classList.remove('active');
     document.getElementById('screen-login').classList.add('active');
+    stopAdminPanel();
     // Réinitialiser le formulaire
     document.getElementById('login-err').classList.remove('show');
     document.getElementById('login-submit').disabled = false;
@@ -467,6 +495,107 @@ document.getElementById('login-pass').addEventListener('keydown', function(e) {
 document.getElementById('login-email').addEventListener('keydown', function(e) {
   if (e.key === 'Enter') handleEmailLogin();
 });
+
+// ───── ADMIN — Gestion centralisée des comptes ─────
+var adminUnsub = null;
+var allUsersData = [];
+
+function startAdminPanel(user) {
+  // Vérifier si admin (3 méthodes)
+  usersRef.doc(user.uid).get().then(function(doc) {
+    var isAdminUser = (doc.exists && doc.data().admin === true);
+    var isMaster = (user.email && normEmail(user.email) === MASTER_EMAIL);
+
+    // Vérifier aussi la collection admins (DM)
+    db.collection('admins').doc(user.uid).get().then(function(admDoc) {
+      var isDMAdmin = admDoc.exists;
+
+      if (!isAdminUser && !isMaster && !isDMAdmin) {
+        document.getElementById('admin-panel').style.display = 'none';
+        return;
+      }
+
+      // Admin confirmé → afficher le panel
+      document.getElementById('admin-panel').style.display = 'block';
+      loadAdminUsers();
+
+      // Écoute temps réel
+      if (adminUnsub) adminUnsub();
+      adminUnsub = usersRef.onSnapshot(function(snap) {
+        allUsersData = [];
+        snap.forEach(function(d) { allUsersData.push({ id: d.id, data: d.data() }); });
+        renderAdminTable();
+      }, function(err) {
+        console.error('Admin users listener error:', err);
+      });
+    }).catch(function() {
+      // admins collection inaccessible → ignorer
+    });
+  }).catch(function() {});
+}
+
+function stopAdminPanel() {
+  if (adminUnsub) { adminUnsub(); adminUnsub = null; }
+  allUsersData = [];
+  document.getElementById('admin-panel').style.display = 'none';
+}
+
+function renderAdminTable() {
+  var tbody = document.getElementById('admin-users-tbody');
+  var countEl = document.getElementById('admin-user-count');
+  if (!tbody) return;
+
+  var sorted = [].concat(allUsersData).sort(function(a, b) {
+    return (a.data.createdAt || '') < (b.data.createdAt || '') ? 1 : -1;
+  });
+
+  countEl.textContent = sorted.length + ' utilisateur(s)';
+
+  tbody.innerHTML = sorted.map(function(u) {
+    var d = u.data;
+    var isBlocked = d.status === 'blocked';
+    var isAdmin = d.admin === true;
+    var isMaster = normEmail(d.email) === MASTER_EMAIL;
+    var roleLabel = isMaster ? '🔑 Maître' : (isAdmin ? '👑 Admin' : '👤 Client');
+    var statusLabel = isBlocked ? '🚫 Bloqué' : '✅ Actif';
+    var statusColor = isBlocked ? 'var(--red)' : 'var(--green)';
+    var actions = '';
+
+    if (!isMaster) {
+      // Toggle admin
+      actions += '<button onclick="toggleAdmin(\'' + u.id + '\',' + isAdmin + ')" style="padding:4px 8px;border-radius:6px;border:1px solid #c4b5fd;background:' + (isAdmin ? '#f5f3ff' : 'var(--purple)') + ';color:' + (isAdmin ? '#7c3aed' : '#fff') + ';cursor:pointer;font-size:11px;font-family:inherit;margin-right:4px;">' + (isAdmin ? 'Rétrograder' : 'Promouvoir admin') + '</button>';
+      // Toggle block
+      actions += '<button onclick="toggleBlock(\'' + u.id + '\',\'' + (isBlocked ? 'active' : 'blocked') + '\')" style="padding:4px 8px;border-radius:6px;border:1px solid ' + (isBlocked ? '#bbf7d0' : '#fecaca') + ';background:' + (isBlocked ? 'var(--green-bg)' : 'var(--red-bg)') + ';color:' + (isBlocked ? 'var(--green)' : 'var(--red)') + ';cursor:pointer;font-size:11px;font-family:inherit;">' + (isBlocked ? 'Débloquer' : 'Bloquer') + '</button>';
+    } else {
+      actions = '<span style="color:var(--text-muted);font-size:10px;">Protégé</span>';
+    }
+
+    return '<tr style="border-bottom:1px solid #f3f4f6;">' +
+      '<td style="padding:10px 12px;font-weight:600;">' + (d.email || u.id) + '</td>' +
+      '<td style="padding:10px 12px;color:' + statusColor + ';font-weight:600;">' + statusLabel + '</td>' +
+      '<td style="padding:10px 12px;">' + roleLabel + '</td>' +
+      '<td style="padding:10px 12px;color:var(--text-muted);">' + (d.createdAt || '—') + '</td>' +
+      '<td style="padding:10px 12px;">' + actions + '</td>' +
+      '</tr>';
+  }).join('');
+}
+
+function toggleAdmin(uid, currentAdmin) {
+  var newVal = !currentAdmin;
+  usersRef.doc(uid).update({ admin: newVal }).then(function() {
+    showToast(newVal ? '👑 Admin promu !' : '👤 Admin rétrogradé.', 'ok');
+  }).catch(function(e) {
+    showToast('❌ Erreur : ' + e.message, 'err');
+  });
+}
+
+function toggleBlock(uid, newStatus) {
+  usersRef.doc(uid).update({ status: newStatus }).then(function() {
+    showToast(newStatus === 'blocked' ? '🚫 Compte bloqué.' : '✅ Compte débloqué.', 'ok');
+  }).catch(function(e) {
+    showToast('❌ Erreur : ' + e.message, 'err');
+  });
+}
 
 // ───── UTILITAIRES ─────
 function normEmail(e) { return (e || '').toLowerCase().trim(); }
