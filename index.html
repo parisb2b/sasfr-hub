@@ -19,6 +19,9 @@
   --amber:#d97706;
   --amber-bg:#fffbeb;
   --amber-border:#fde68a;
+  --red:#b91c1c;
+  --red-bg:#fef2f2;
+  --red-border:#fecaca;
 }
 *{box-sizing:border-box;}
 body{
@@ -27,14 +30,55 @@ body{
   background:var(--bg-page);
   color:var(--text-main);
   font-size:14px;
+  min-height:100vh;
 }
 a{text-decoration:none;color:inherit;}
+
+/* ===== ÉCRANS ===== */
+.screen{display:none;}
+.screen.active{display:flex;flex-direction:column;min-height:100vh;}
+
+/* ===== LOADER ===== */
+#screen-loader{
+  display:flex;position:fixed;inset:0;background:var(--bg-page);z-index:500;
+  align-items:center;justify-content:center;flex-direction:column;gap:12px;color:var(--text-muted);
+}
+#screen-loader.hidden{display:none;}
+.loader-spinner{width:28px;height:28px;border:3px solid var(--border);border-top-color:var(--color-accent);border-radius:50%;animation:spin .7s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ===== LOGIN SCREEN ===== */
+#screen-login{align-items:center;justify-content:center;padding:24px;}
+.login-card{
+  background:var(--bg-card);border:1px solid var(--border);border-radius:16px;
+  padding:36px 30px;width:400px;max-width:92vw;box-shadow:0 4px 24px rgba(0,0,0,.08);
+}
+.login-brand{font-size:20px;font-weight:700;text-align:center;margin-bottom:4px;}
+.login-brand span{color:var(--color-accent);}
+.login-sub{font-size:13px;color:var(--text-muted);text-align:center;margin-bottom:24px;}
+.login-field{margin-bottom:14px;}
+.login-field label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text-muted);display:block;margin-bottom:5px;}
+.login-field input{padding:10px 12px;border:1px solid var(--border);border-radius:8px;font-size:13px;font-family:inherit;width:100%;outline:none;}
+.login-field input:focus{border-color:var(--color-accent);}
+.login-err{font-size:11px;color:var(--red);margin-bottom:12px;display:none;line-height:1.4;}
+.login-err.show{display:block;}
+.login-submit{width:100%;display:inline-flex;align-items:center;justify-content:center;height:40px;padding:0 16px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;border:none;background:var(--color-accent);color:#fff;font-family:inherit;}
+.login-submit:hover{background:var(--color-accent-dark);}
+.login-submit:disabled{opacity:.6;cursor:not-allowed;}
+.btn-google{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:40px;padding:0 14px;border-radius:8px;font-size:13px;font-weight:500;cursor:pointer;border:1px solid var(--border);background:var(--bg-card);color:var(--text-main);width:100%;margin-bottom:10px;font-family:inherit;}
+.btn-google:hover{background:var(--bg-page);}
+.login-sep{display:flex;align-items:center;gap:10px;margin:16px 0;color:#9ca3af;font-size:10px;}
+.login-sep::before,.login-sep::after{content:'';flex:1;height:1px;background:var(--border);}
+.login-foot{text-align:center;margin-top:14px;font-size:11px;color:var(--text-muted);}
+.login-foot button{font-size:11px;color:var(--color-accent);cursor:pointer;background:none;border:none;font-family:inherit;font-weight:600;}
+.login-mode-toggle{margin-top:10px;font-size:11px;color:var(--text-muted);text-align:center;}
+.login-mode-toggle button{font-size:11px;color:var(--color-accent);cursor:pointer;background:none;border:none;font-family:inherit;font-weight:600;}
 
 /* ===== TOP BAR ===== */
 .topbar{
   height:60px;background:#fff;border-bottom:1px solid var(--border);
   display:flex;align-items:center;justify-content:space-between;
-  padding:0 28px;
+  padding:0 28px;flex-shrink:0;
 }
 .topbar-left{display:flex;align-items:center;gap:10px;}
 .topbar-left .sq{
@@ -43,7 +87,10 @@ a{text-decoration:none;color:inherit;}
 }
 .topbar-title{font-weight:700;font-size:16px;}
 .topbar-domain{font-size:11.5px;color:var(--text-muted);background:var(--bg-page);padding:3px 9px;border-radius:6px;margin-left:4px;}
-.topbar-right{font-size:12.5px;color:var(--text-muted);}
+.topbar-right{display:flex;align-items:center;gap:12px;font-size:12.5px;color:var(--text-muted);}
+.topbar-user{font-weight:600;color:var(--text-main);}
+.topbar-logout{display:inline-flex;align-items:center;gap:4px;padding:5px 10px;border-radius:6px;border:1px solid var(--border);background:var(--bg-card);color:var(--text-muted);cursor:pointer;font-size:11px;font-weight:600;font-family:inherit;}
+.topbar-logout:hover{background:var(--red-bg);color:var(--red);border-color:var(--red-border);}
 
 /* ===== HERO ===== */
 .hero{
@@ -118,103 +165,334 @@ a{text-decoration:none;color:inherit;}
   max-width:1100px;margin:0 auto;padding:0 28px 50px;
   font-size:11.5px;color:#9ca3af;text-align:center;
 }
+
+/* ===== TOAST ===== */
+.toast{position:fixed;bottom:24px;right:24px;z-index:600;padding:10px 16px;border-radius:8px;font-size:12px;font-weight:600;box-shadow:0 4px 16px rgba(0,0,0,.12);opacity:0;transform:translateY(10px);transition:all .25s;pointer-events:none;}
+.toast.show{opacity:1;transform:translateY(0);}
+.toast.ok{background:var(--green-bg);color:var(--green);border:1px solid var(--green-border);}
+.toast.err{background:var(--red-bg);color:var(--red);border:1px solid var(--red-border);}
 </style>
 </head>
 <body>
 
-<div class="topbar">
-  <div class="topbar-left">
-    <div class="sq">S</div>
-    <div class="topbar-title">SASFR</div>
-    <div class="topbar-domain">sasfr.com</div>
-  </div>
-  <div class="topbar-right">Portail interne — écosystème SASFR</div>
+<!-- ═══════ LOADER (vérification session) ═══════ -->
+<div class="screen active" id="screen-loader" style="display:flex;">
+  <div class="loader-spinner"></div>
+  <span>Vérification de votre session…</span>
 </div>
 
-<div class="hero">
-  <h1>Choisissez votre outil</h1>
-  <p>Accédez directement à l'un des espaces de travail SASFR.</p>
-</div>
+<!-- ═══════ ÉCRAN CONNEXION ═══════ -->
+<div class="screen" id="screen-login">
+  <div class="login-card">
+    <div class="login-brand">🔐 Portail<span>SASFR</span></div>
+    <div class="login-sub">Connectez-vous pour accéder à vos outils</div>
 
-<div class="grid-wrap">
-  <div class="grid">
+    <!-- Google -->
+    <button class="btn-google" id="btn-google" onclick="signInWithGoogle()">
+      <svg width="18" height="18" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.95 16.46 0 20.12 0 24c0 3.88.95 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+      Connexion avec Google
+    </button>
 
-    <!-- LISTES -->
-    <a class="tile v-listes" href="https://listes.sasfr.com/" target="_blank" rel="noopener">
-      <div class="tile-top">
-        <div class="tile-icon-wrap">📋</div>
-        <div class="tile-status online"><span class="pulse-dot"></span>En ligne</div>
-      </div>
-      <div>
-        <div class="tile-name">Listes</div>
-        <div class="tile-domain">listes.sasfr.com</div>
-      </div>
-      <p class="tile-desc">Gestion de listes de tâches collaboratives — création, attribution multi-personnes et suivi en temps réel.</p>
-      <div class="tile-meta-row">
-        <span><b>12</b> listes actives</span>
-        <span><b>5</b> membres</span>
-      </div>
-      <div class="tile-cta">Ouvrir Listes <span class="arrow">→</span></div>
-    </a>
+    <div class="login-sep">ou par email</div>
 
-    <!-- DM -->
-    <a class="tile v-dm" href="https://dm.sasfr.com/" target="_blank" rel="noopener">
-      <div class="tile-top">
-        <div class="tile-icon-wrap">🏗️</div>
-        <div class="tile-status online"><span class="pulse-dot"></span>En ligne</div>
-      </div>
-      <div>
-        <div class="tile-name">DM — Chantier Tracker</div>
-        <div class="tile-domain">dm.sasfr.com</div>
-      </div>
-      <p class="tile-desc">Suivi de chantiers — tâches, échéances, photos et membres d'équipe par chantier.</p>
-      <div class="tile-meta-row">
-        <span><b>3</b> chantiers</span>
-        <span><b>4</b> membres</span>
-      </div>
-      <div class="tile-cta">Ouvrir DM <span class="arrow">→</span></div>
-    </a>
+    <!-- Email / Mot de passe -->
+    <div class="login-field"><label>Email</label><input type="email" id="login-email" autocomplete="email" placeholder="vous@exemple.com"></div>
+    <div class="login-field"><label>Mot de passe</label><input type="password" id="login-pass" placeholder="········"></div>
+    <div class="login-err" id="login-err"></div>
+    <button class="login-submit" id="login-submit" onclick="handleEmailLogin()">Se connecter</button>
 
-    <!-- TOTAL -->
-    <a class="tile v-total" href="https://total.sasfr.com/" target="_blank" rel="noopener">
-      <div class="tile-top">
-        <div class="tile-icon-wrap">📊</div>
-        <div class="tile-status online"><span class="pulse-dot"></span>En ligne</div>
-      </div>
-      <div>
-        <div class="tile-name">Total — Comptes Client</div>
-        <div class="tile-domain">total.sasfr.com</div>
-      </div>
-      <p class="tile-desc">Suivi des comptes financiers clients — entrées, sorties, solde et historique des virements.</p>
-      <div class="tile-meta-row">
-        <span><b>9</b> comptes</span>
-        <span><b>2</b> partagés</span>
-      </div>
-      <div class="tile-cta">Ouvrir Total <span class="arrow">→</span></div>
-    </a>
-
-    <!-- CARGO -->
-    <a class="tile v-cargo" href="https://cargo.sasfr.com/" target="_blank" rel="noopener">
-      <div class="tile-top">
-        <div class="tile-icon-wrap">📦</div>
-        <div class="tile-status online"><span class="pulse-dot"></span>En ligne</div>
-      </div>
-      <div>
-        <div class="tile-name">Cargo — Optimiseur conteneur</div>
-        <div class="tile-domain">cargo.sasfr.com</div>
-      </div>
-      <p class="tile-desc">Optimisation du chargement de conteneurs — plans 2D/3D, export Excel et calcul de volumétrie.</p>
-      <div class="tile-meta-row">
-        <span><b>40HC</b> dernier calcul</span>
-        <span>V40</span>
-      </div>
-      <div class="tile-cta">Ouvrir Cargo <span class="arrow">→</span></div>
-    </a>
-
+    <div class="login-mode-toggle" id="login-mode-toggle">
+      <span id="mode-text">Pas de compte ?</span>
+      <button id="mode-btn" onclick="toggleMode()">S'inscrire</button>
+    </div>
   </div>
 </div>
 
-<div class="footer-note">Écosystème SASFR · sasfr.com — page d'accueil sans authentification, chaque outil gère sa propre connexion.</div>
+<!-- ═══════ ÉCRAN PRINCIPAL (après connexion) ═══════ -->
+<div class="screen" id="screen-main">
+  <div class="topbar">
+    <div class="topbar-left">
+      <div class="sq">S</div>
+      <div class="topbar-title">SASFR</div>
+      <div class="topbar-domain">sasfr.com</div>
+    </div>
+    <div class="topbar-right">
+      <span class="topbar-user" id="user-display"></span>
+      <button class="topbar-logout" onclick="handleSignOut()">↪ Déconnexion</button>
+    </div>
+  </div>
+
+  <div class="hero">
+    <h1>Choisissez votre outil</h1>
+    <p>Accédez directement à l'un des espaces de travail SASFR.</p>
+  </div>
+
+  <div class="grid-wrap">
+    <div class="grid">
+
+      <!-- LISTES -->
+      <a class="tile v-listes" href="https://listes.sasfr.com/" target="_blank" rel="noopener">
+        <div class="tile-top">
+          <div class="tile-icon-wrap">📋</div>
+          <div class="tile-status online"><span class="pulse-dot"></span>En ligne</div>
+        </div>
+        <div>
+          <div class="tile-name">Listes</div>
+          <div class="tile-domain">listes.sasfr.com</div>
+        </div>
+        <p class="tile-desc">Gestion de listes de tâches collaboratives — création, attribution multi-personnes et suivi en temps réel.</p>
+        <div class="tile-meta-row">
+          <span><b>12</b> listes actives</span>
+          <span><b>5</b> membres</span>
+        </div>
+        <div class="tile-cta">Ouvrir Listes <span class="arrow">→</span></div>
+      </a>
+
+      <!-- DM -->
+      <a class="tile v-dm" href="https://dm.sasfr.com/" target="_blank" rel="noopener">
+        <div class="tile-top">
+          <div class="tile-icon-wrap">🏗️</div>
+          <div class="tile-status online"><span class="pulse-dot"></span>En ligne</div>
+        </div>
+        <div>
+          <div class="tile-name">DM — Chantier Tracker</div>
+          <div class="tile-domain">dm.sasfr.com</div>
+        </div>
+        <p class="tile-desc">Suivi de chantiers — tâches, échéances, photos et membres d'équipe par chantier.</p>
+        <div class="tile-meta-row">
+          <span><b>3</b> chantiers</span>
+          <span><b>4</b> membres</span>
+        </div>
+        <div class="tile-cta">Ouvrir DM <span class="arrow">→</span></div>
+      </a>
+
+      <!-- TOTAL -->
+      <a class="tile v-total" href="https://total.sasfr.com/" target="_blank" rel="noopener">
+        <div class="tile-top">
+          <div class="tile-icon-wrap">📊</div>
+          <div class="tile-status online"><span class="pulse-dot"></span>En ligne</div>
+        </div>
+        <div>
+          <div class="tile-name">Total — Comptes Client</div>
+          <div class="tile-domain">total.sasfr.com</div>
+        </div>
+        <p class="tile-desc">Suivi des comptes financiers clients — entrées, sorties, solde et historique des virements.</p>
+        <div class="tile-meta-row">
+          <span><b>9</b> comptes</span>
+          <span><b>2</b> partagés</span>
+        </div>
+        <div class="tile-cta">Ouvrir Total <span class="arrow">→</span></div>
+      </a>
+
+      <!-- CARGO -->
+      <a class="tile v-cargo" href="https://cargo.sasfr.com/" target="_blank" rel="noopener">
+        <div class="tile-top">
+          <div class="tile-icon-wrap">📦</div>
+          <div class="tile-status online"><span class="pulse-dot"></span>En ligne</div>
+        </div>
+        <div>
+          <div class="tile-name">Cargo — Optimiseur conteneur</div>
+          <div class="tile-domain">cargo.sasfr.com</div>
+        </div>
+        <p class="tile-desc">Optimisation du chargement de conteneurs — plans 2D/3D, export Excel et calcul de volumétrie.</p>
+        <div class="tile-meta-row">
+          <span><b>40HC</b> dernier calcul</span>
+          <span>V40</span>
+        </div>
+        <div class="tile-cta">Ouvrir Cargo <span class="arrow">→</span></div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="footer-note">Écosystème SASFR · sasfr.com — connecté en session unique sur tous les outils.</div>
+</div>
+
+<div class="toast" id="toast"><span id="toast-msg"></span></div>
+
+<!-- ═══════ FIREBASE SDK ═══════ -->
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+
+<script>
+// ───── INIT FIREBASE (projet sasfr-chantiers partagé) ─────
+var fbConfig = {
+  apiKey: "AIzaSyDuMelJjjPWDnJOj8_rnehddcQxRMWr058",
+  authDomain: "sasfr-chantiers.firebaseapp.com",
+  projectId: "sasfr-chantiers",
+  storageBucket: "sasfr-chantiers.appspot.com"
+};
+
+firebase.initializeApp(fbConfig);
+var auth = firebase.auth();
+var db = firebase.firestore();
+var usersRef = db.collection('users');
+var MASTER_EMAIL = 'parisb2b@gmail.com';
+
+// ───── PERSISTANCE : browserLocal pour partage session *.sasfr.com ─────
+auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL)
+  .then(function() { console.log('✅ Auth persistence: LOCAL'); })
+  .catch(function(e) { console.warn('⚠️ persistence:', e); });
+
+// ───── MODE CONNEXION (login vs inscription) ─────
+var authMode = 'login'; // 'login' | 'register'
+
+function toggleMode() {
+  authMode = (authMode === 'login') ? 'register' : 'login';
+  var modeBtn = document.getElementById('mode-btn');
+  var modeText = document.getElementById('mode-text');
+  var submitBtn = document.getElementById('login-submit');
+  if (authMode === 'register') {
+    modeText.textContent = 'Déjà un compte ?';
+    modeBtn.textContent = 'Se connecter';
+    submitBtn.textContent = 'Créer mon compte';
+  } else {
+    modeText.textContent = 'Pas de compte ?';
+    modeBtn.textContent = "S'inscrire";
+    submitBtn.textContent = 'Se connecter';
+  }
+  document.getElementById('login-err').classList.remove('show');
+}
+
+// ───── CONNEXION GOOGLE ─────
+function signInWithGoogle() {
+  var btn = document.getElementById('btn-google');
+  btn.disabled = true;
+  var provider = new firebase.auth.GoogleAuthProvider();
+  auth.signInWithPopup(provider).catch(function(e) {
+    showError('Erreur Google : ' + (e.message || 'Réessayez.'));
+    btn.disabled = false;
+  });
+}
+
+// ───── CONNEXION EMAIL/MDP ─────
+function handleEmailLogin() {
+  var email = document.getElementById('login-email').value.trim();
+  var pass = document.getElementById('login-pass').value;
+  var submitBtn = document.getElementById('login-submit');
+  var errEl = document.getElementById('login-err');
+  errEl.classList.remove('show');
+
+  if (!email || !pass) {
+    showError('Veuillez saisir votre email et votre mot de passe.');
+    return;
+  }
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Patientez…';
+
+  if (authMode === 'register') {
+    // Inscription
+    auth.createUserWithEmailAndPassword(email, pass)
+      .then(function(cred) {
+        // Créer le document users
+        var ne = normEmail(email);
+        var isMaster = (ne === MASTER_EMAIL);
+        return usersRef.doc(cred.user.uid).set({
+          email: ne,
+          status: 'active',
+          admin: isMaster,
+          createdAt: new Date().toISOString().slice(0, 10)
+        }).then(function() {
+          showToast('✅ Compte créé avec succès !', 'ok');
+        });
+      })
+      .catch(function(e) {
+        showError(translateAuthError(e));
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Créer mon compte';
+      });
+  } else {
+    // Connexion
+    auth.signInWithEmailAndPassword(email, pass)
+      .catch(function(e) {
+        showError(translateAuthError(e));
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Se connecter';
+      });
+  }
+}
+
+// ───── DÉCONNEXION ─────
+function handleSignOut() {
+  auth.signOut().catch(function(e) {
+    console.warn('SignOut error:', e);
+  });
+}
+
+// ───── LISTENER AUTH ─────
+auth.onAuthStateChanged(function(user) {
+  // Cacher le loader
+  document.getElementById('screen-loader').classList.add('hidden');
+
+  if (user) {
+    // Vérifier le statut (bloqué ?)
+    usersRef.doc(user.uid).get().then(function(doc) {
+      if (doc.exists && doc.data().status === 'blocked') {
+        showToast('⛔ Compte bloqué. Contactez votre administrateur.', 'err');
+        auth.signOut();
+        return;
+      }
+    }).catch(function() {});
+
+    // Afficher l'écran principal
+    document.getElementById('screen-login').classList.remove('active');
+    document.getElementById('screen-main').classList.add('active');
+    document.getElementById('user-display').textContent = user.email || 'Utilisateur';
+  } else {
+    // Afficher l'écran de connexion
+    document.getElementById('screen-main').classList.remove('active');
+    document.getElementById('screen-login').classList.add('active');
+    // Réinitialiser le formulaire
+    document.getElementById('login-err').classList.remove('show');
+    document.getElementById('login-submit').disabled = false;
+    document.getElementById('login-submit').textContent = 'Se connecter';
+    document.getElementById('btn-google').disabled = false;
+  }
+});
+
+// ───── ENTER KEY ─────
+document.getElementById('login-pass').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') handleEmailLogin();
+});
+document.getElementById('login-email').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') handleEmailLogin();
+});
+
+// ───── UTILITAIRES ─────
+function normEmail(e) { return (e || '').toLowerCase().trim(); }
+
+function showError(msg) {
+  var el = document.getElementById('login-err');
+  el.textContent = msg;
+  el.classList.add('show');
+}
+
+function translateAuthError(e) {
+  var code = (e && e.code) || '';
+  if (code === 'auth/user-not-found' || code === 'auth/wrong-password' || code === 'auth/invalid-credential')
+    return 'Email ou mot de passe incorrect.';
+  if (code === 'auth/email-already-in-use')
+    return 'Cet email est déjà utilisé. Connectez-vous ou utilisez un autre email.';
+  if (code === 'auth/weak-password')
+    return 'Mot de passe trop faible (6 caractères minimum).';
+  if (code === 'auth/invalid-email')
+    return 'Format email invalide.';
+  if (code === 'auth/too-many-requests')
+    return 'Trop de tentatives. Réessayez dans quelques minutes.';
+  return (e && e.message) || 'Erreur de connexion. Réessayez.';
+}
+
+function showToast(msg, type) {
+  var el = document.getElementById('toast');
+  var span = document.getElementById('toast-msg');
+  span.textContent = msg;
+  el.className = 'toast show ' + (type || 'ok');
+  clearTimeout(window._tt);
+  window._tt = setTimeout(function() { el.className = 'toast'; }, 4000);
+}
+</script>
 
 </body>
 </html>
