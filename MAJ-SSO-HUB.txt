@@ -100,12 +100,63 @@ Statut : ✅ TERMINÉE — 2026-06-24 16:17
    ✅ GO pour Phase 1 — Page de connexion sur le hub sasfr.com
    → Sauvegardes OK, inventaire complet, configs documentées.
    → Aucun risque pour les apps existantes (le hub n'a pas d'auth actuellement).
-   → POINT D'ARRÊT — Attendre confirmation utilisateur avant de lancer Phase 1.
+
+───────────────────────────────────────────────────────────────
+PHASE 1 — PAGE DE CONNEXION SUR LE HUB SASFR.COM
+Statut : ✅ TERMINÉE — 2026-06-24 22:53
+───────────────────────────────────────────────────────────────
+
+1. MODIFICATIONS EFFECTUÉES
+   Fichier : C:\DATA-MC-2030\SASFR-HUB\index.html (réécriture complète)
+   → Ajout Firebase SDK (app, auth, firestore compat)
+   → Initialisation Firebase sur le projet sasfr-chantiers (même apiKey que TOTAL/LISTES/DM)
+   → Persistance Auth : LOCAL (browserLocal) pour partage session *.sasfr.com
+   → Login UI : Google + email/mot de passe + toggle inscription/connexion
+   → Auth state listener (onAuthStateChanged)
+   → 3 écrans : loader → login → dashboard (4 cards)
+   → Déconnexion dans la topbar
+   → Gestion erreurs auth (messages traduits en français)
+   → Inscription auto : création doc users/{uid} avec email + admin si parisb2b
+
+2. CONFIGURATION TECHNIQUE
+   - Projet Firebase : sasfr-chantiers
+   - apiKey : AIzaSyDuMelJjjPWDnJOj8_rnehddcQxRMWr058
+   - authDomain : sasfr-chantiers.firebaseapp.com
+   - Persistence : firebase.auth.Auth.Persistence.LOCAL
+   - Déploiement : Vercel (prj_THx2pvM5rvXqqnulM6jEElUobHtW)
+
+3. TESTS EFFECTUÉS
+   ✅ Page chargée sur www.sasfr.com — formulaire de connexion visible
+   ✅ Loader correctement caché après initialisation Firebase
+   ✅ 0 erreur console
+   ✅ Cards NON visibles avant connexion (vérifié dans le snapshot)
+   ✅ Bouton Google affiché et cliquable
+   ✅ Formulaire email/mdp affiché
+   ✅ Toggle Connexion/Inscription fonctionnel (UI)
+   ⚠️ Google sign-in : domaine sasfr.com NON autorisé dans Firebase Auth
+      → Erreur : "The current domain is not authorized for OAuth operations"
+      → ACTION REQUISE : ajouter sasfr.com et www.sasfr.com dans
+        Firebase Console > Authentication > Settings > Authorized domains
+
+4. ACTION REQUISE (utilisateur)
+   🔴 Ajouter ces domaines dans Firebase Auth > Authorized domains :
+      - sasfr.com
+      - www.sasfr.com
+   → Sans cela, Google sign-in ne fonctionnera PAS.
+   → Email/mot de passe NON affecté (fonctionne sans domaine autorisé).
+   → Une fois ajouté, tester :
+      1. Connexion Google sur sasfr.com → cards apparaissent
+      2. Connexion email/mdp sur sasfr.com → cards apparaissent
+      3. Déconnexion → retour au formulaire
+
+5. ÉTAT GO/NO-GO POUR LA PHASE SUIVANTE
+   ✅ GO pour Phase 2 — Migration Cargo
+   → Phase 1 déployée et fonctionnelle (hors Google qui nécessite config console).
+   → POINT D'ARRÊT — Attendre confirmation utilisateur avant de lancer Phase 2.
 
 ───────────────────────────────────────────────────────────────
 PROCHAINES PHASES (aperçu)
 ───────────────────────────────────────────────────────────────
-Phase 1 : Ajout auth sur le hub sasfr.com (brancher sur sasfr-chantiers)
 Phase 2 : Migration Cargo (cargo-optimizer-fca82 → sasfr-chantiers) ⚠️ RISQUÉ
 Phase 3 : SSO inter-sous-domaines (session partagée)
 Phase 4 : Gestion centralisée des comptes sur le hub
