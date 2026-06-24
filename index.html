@@ -427,6 +427,14 @@ auth.onAuthStateChanged(function(user) {
   document.getElementById('screen-loader').classList.add('hidden');
 
   if (user) {
+    // Redirection de retour (après login depuis un sous-domaine)
+    var params = new URLSearchParams(window.location.search);
+    var redirectUrl = params.get('redirect');
+    if (redirectUrl && redirectUrl.indexOf('sasfr.com') !== -1) {
+      window.location.href = redirectUrl;
+      return;
+    }
+
     // Vérifier le statut (bloqué ?)
     usersRef.doc(user.uid).get().then(function(doc) {
       if (doc.exists && doc.data().status === 'blocked') {
