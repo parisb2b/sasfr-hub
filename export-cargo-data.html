@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>Export Cargo Data</title></head>
+<body>
+<h1>Export données Cargo (cargo-optimizer-fca82 → sasfr-chantiers)</h1>
+<pre id="log"></pre>
+<button id="btn" onclick="doExport()">Lancer l'export</button>
+<a id="dl" style="display:none">📥 Télécharger JSON</a>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+<script>
+var logEl = document.getElementById('log');
+function log(msg) { logEl.textContent += msg + '\n'; console.log(msg); }
+
+async function doExport() {
+  document.getElementById('btn').disabled = true;
+  log('🔌 Connexion à cargo-optimizer-fca82...');
+
+  var app = firebase.initializeApp({
+    apiKey: "AIzaSyDyk2XwTDY2tjbnUsVRI-hg3jptd9sNe2Y",
+    authDomain: "cargo-optimizer-fca82.firebaseapp.com",
+    projectId: "cargo-optimizer-fca82",
+    storageBucket: "cargo-optimizer-fca82.firebasestorage.app"
+  }, 'exportCargo');
+  var db = firebase.firestore(app);
+
+  // Auth anonyme (comme Cargo)
+  try {
+    await app.auth().signInAnonymously();
+    log('✅ Auth anonyme OK');
+  } catch(e) {
+    log('⚠️ Auth skipped: ' + e.message);
+  }
+
+  var exportData = {
+    exportedAt: new Date().toISOString(),
+    source: 'cargo-optimizer-fca82',
+    collections: {}
+  };
+
+  // 1. cargo_sessions
+  log('📥 Lecture cargo_sessions...');
+  try {
+    var sessionsSnap = await db.collection('cargo_sessions').get();
+    var sessions = [];
+    sessionsSnap.forEach(function(doc) {
+      sessions.push({ id: doc.id, data: doc.data() });
+    });
+    exportData.collections.cargo_sessions = sessions;
+    log('✅ cargo_sessions: ' + sessions.length + ' documents');
+    if (sessions.length > 0) {
+      log('   IDs: ' + sessions.map(function(s){return s.id;}).join(', '));
+    }
+  } catch(e) {
+    log('❌ cargo_sessions: ' + e.message);
+  }
+
+  // 2. cargo_config
+  log('📥 Lecture cargo_config...');
+  try {
+    var configSnap = await db.collection('cargo_config').get();
+    var configs = [];
+    configSnap.forEach(function(doc) {
+      configs.push({ id: doc.id, data: doc.data() });
+    });
+    exportData.collections.cargo_config = configs;
+    log('✅ cargo_config: ' + configs.length + ' documents');
+    configs.forEach(function(c) {
+      log('   ' + c.id + ' — champs: ' + Object.keys(c.data).join(', '));
+    });
+  } catch(e) {
+    log('❌ cargo_config: ' + e.message);
+  }
+
+  // 3. Vérifier autres collections potentielles
+  log('📥 Scan autres collections...');
+  var extraCols = [];
+  try {
+    // Essayer quelques noms possibles
+    var tries = ['regles_dor', 'sessions', 'config', 'cargo', 'users'];
+    for (var i = 0; i < tries.length; i++) {
+      try {
+        var snap = await db.collection(tries[i]).limit(1).get();
+        if (!snap.empty) {
+          log('   🔍 Collection trouvée: ' + tries[i] + ' (' + snap.size + ' docs visibles)');
+          var docs = [];
+          var fullSnap = await db.collection(tries[i]).get();
+          fullSnap.forEach(function(d) { docs.push({id: d.id, data: d.data()}); });
+          exportData.collections[tries[i]] = docs;
+        }
+      } catch(ee) { /* ignorer */ }
+    }
+  } catch(e) { log('⚠️ Scan: ' + e.message); }
+
+  // Téléchargement
+  var json = JSON.stringify(exportData, null, 2);
+  var blob = new Blob([json], {type: 'application/json'});
+  var url = URL.createObjectURL(blob);
+  var a = document.getElementById('dl');
+  a.href = url;
+  a.download = 'export-cargo-' + new Date().toISOString().slice(0,10) + '.json';
+  a.style.display = 'inline';
+  a.textContent = '📥 Télécharger export-cargo-' + new Date().toISOString().slice(0,10) + '.json (' + Math.round(json.length/1024) + ' Ko)';
+
+  log('');
+  log('═══════════════════════════════════');
+  log('✅ EXPORT TERMINÉ');
+  log('   Total collections: ' + Object.keys(exportData.collections).length);
+  log('   Taille JSON: ' + Math.round(json.length/1024) + ' Ko');
+  log('   Cliquez sur le lien ci-dessus pour télécharger.');
+  log('═══════════════════════════════════');
+}
+</script>
+</body></html>

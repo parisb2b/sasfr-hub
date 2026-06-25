@@ -1,0 +1,21 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]: 🔐 PortailSASFR
+    - generic [ref=e5]: Connectez-vous pour accéder à vos outils
+    - button "Connexion avec Google" [ref=e6] [cursor=pointer]:
+      - img [ref=e7]
+      - text: Connexion avec Google
+    - generic [ref=e12]: ou par email
+    - generic [ref=e13]:
+      - generic [ref=e14]: Email
+      - textbox "vous@exemple.com" [ref=e15]: parisb2b@gmail.com
+    - generic [ref=e16]:
+      - generic [ref=e17]: Mot de passe
+      - textbox "········" [ref=e18]: "@iP$$118811"
+    - generic [ref=e22]: "Erreur Google : Firebase: This domain is not authorized for OAuth operations for your Firebase project. Edit the list of authorized domains from the Firebase console. (auth/unauthorized-domain)."
+    - button "Se connecter" [ref=e19] [cursor=pointer]
+    - generic [ref=e20]:
+      - text: Pas de compte ?
+      - button "S'inscrire" [ref=e21] [cursor=pointer]
+  - iframe [ref=e23]:
+    

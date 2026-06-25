@@ -1,0 +1,95 @@
+[     888ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    1444ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    1658ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    1825ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    2136ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    2285ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    2314ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    2346ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    2500ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    2529ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    2676ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    2840ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    2875ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    2914ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    3064ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    3093ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    3129ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    3285ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    3315ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    3352ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    3506ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    3543ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    3573ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    3739ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    3766ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    3817ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    3962ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    3994ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    4021ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    5334ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    5397ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    5431ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    5580ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    5608ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    5650ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    5797ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    5827ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    5861ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    6011ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    6045ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    6078ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    6225ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    6259ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    6291ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    6450ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    6483ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    6519ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    6668ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    6696ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    6728ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    6877ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    6907ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    6938ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    7087ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    7126ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    7162ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    7345ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    7378ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    7409ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    7555ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    7595ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    7623ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    7768ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    7801ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    7829ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    7967ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    8006ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    8038ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    8186ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    8224ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    8256ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    8400ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    8437ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    8482ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    8625ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    8669ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    8709ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    8848ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    8884ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    8935ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    9087ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    9121ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    9163ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    9309ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    9343ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    9430ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    9573ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    9611ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    9637ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[    9789ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[    9826ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[    9856ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0
+[   10015ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:334
+[   10045ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://total.sasfr.com/:0
+[   10100ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Ftotal.sasfr.com%2F:0

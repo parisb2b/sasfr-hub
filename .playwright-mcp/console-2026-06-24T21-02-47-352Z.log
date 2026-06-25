@@ -1,0 +1,8 @@
+[    1363ms] [LOG] BUILD V40 — 2026-06-24T21:02:48.710Z @ https://cargo.sasfr.com/:4559
+[    1365ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4663
+[    1365ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4678
+[    1384ms] [WARNING] ⚠️ Aucune session — connectez-vous sur sasfr.com @ https://cargo.sasfr.com/:210
+[    1384ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4702
+[    1479ms] [ERROR] Firebase get() error: permission-denied Missing or insufficient permissions. @ https://cargo.sasfr.com/:4752
+[    1480ms] [ERROR] Firebase onSnapshot error: permission-denied Missing or insufficient permissions. @ https://cargo.sasfr.com/:4772
+[    1485ms] [WARNING] ⚠ REGLES Firestore: permission-denied Missing or insufficient permissions. — repli actif (créer règles Firestore pour cargo_config) @ https://cargo.sasfr.com/:4725

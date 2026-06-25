@@ -103,6 +103,49 @@ service cloud.firestore {
     }
 
     // ═══════════════════════════════════════════════════════
+    // 📦 SECTION CARGO — Optimiseur conteneur (migré depuis cargo-optimizer-fca82)
+    // ═══════════════════════════════════════════════════════
+
+    match /cargo_sessions/{docId} {
+      // Lecture : propriétaire OU admin
+      // Requêtes client :
+      //   db.collection('cargo_sessions').get() (charge toutes les sessions visibles)
+      //   db.collection('cargo_sessions').onSnapshot() (temps réel)
+      allow read: if request.auth != null && (
+        isAdmin()
+        || resource.data.ownerId == request.auth.uid
+      );
+
+      // Création / Mise à jour : propriétaire OU admin
+      // Requête client : db.collection('cargo_sessions').doc(id).set(data)
+      allow create: if request.auth != null && (
+        isAdmin()
+        || request.resource.data.ownerId == request.auth.uid
+      );
+      allow update: if request.auth != null && (
+        isAdmin()
+        || resource.data.ownerId == request.auth.uid
+      );
+
+      // Suppression : propriétaire OU admin
+      // Requête client : db.collection('cargo_sessions').doc(id).delete()
+      allow delete: if request.auth != null && (
+        isAdmin()
+        || resource.data.ownerId == request.auth.uid
+      );
+    }
+
+    match /cargo_config/{docId} {
+      // Lecture : tout utilisateur authentifié (règles dor, config partagée)
+      // Requête client : db.collection('cargo_config').doc('regles_dor').get()
+      allow read: if request.auth != null;
+
+      // Écriture : admin uniquement
+      // Requête client : db.collection('cargo_config').doc('regles_dor').set(data)
+      allow write: if request.auth != null && isAdmin();
+    }
+
+    // ═══════════════════════════════════════════════════════
     // 📋 SECTION LISTES — Gestion de listes collaboratives
     // ═══════════════════════════════════════════════════════
 

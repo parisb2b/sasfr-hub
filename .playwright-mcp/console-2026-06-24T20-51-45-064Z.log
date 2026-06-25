@@ -1,0 +1,2 @@
+[     571ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/:0
+[     636ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/:334

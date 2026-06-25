@@ -1,0 +1,19 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]: Vérification de votre session…
+  - generic [ref=e6]:
+    - generic [ref=e7]: 🔐 PortailSASFR
+    - generic [ref=e8]: Connectez-vous pour accéder à vos outils
+    - button "Connexion avec Google" [ref=e9] [cursor=pointer]:
+      - img [ref=e10]
+      - text: Connexion avec Google
+    - generic [ref=e15]: ou par email
+    - generic [ref=e16]:
+      - generic [ref=e17]: Email
+      - textbox "vous@exemple.com" [ref=e18]
+    - generic [ref=e19]:
+      - generic [ref=e20]: Mot de passe
+      - textbox "········" [ref=e21]
+    - button "Se connecter" [ref=e22] [cursor=pointer]
+    - generic [ref=e23]:
+      - text: Pas de compte ?
+      - button "S'inscrire" [ref=e24] [cursor=pointer]

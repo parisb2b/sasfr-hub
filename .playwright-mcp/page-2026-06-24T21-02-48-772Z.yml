@@ -1,0 +1,29 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - text: 集装箱
+      - generic [ref=e4]: 优化器
+    - generic [ref=e5]:
+      - generic [ref=e6] [cursor=pointer]: 装载记录
+      - generic [ref=e7] [cursor=pointer]: 1 · 集装箱
+      - generic [ref=e8] [cursor=pointer]: 2 · 货物
+      - generic [ref=e9] [cursor=pointer]: 3 · 可视化
+      - generic [ref=e10] [cursor=pointer]: 4 · 导出
+    - generic [ref=e11]:
+      - button "FR" [ref=e12] [cursor=pointer]
+      - button "+ 新建装载" [ref=e13] [cursor=pointer]
+  - generic [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - generic [ref=e18]: 我的装载记录
+        - generic [ref=e19]: 创建新装载或继续已有记录
+      - button "+ Nouveau chargement" [ref=e20] [cursor=pointer]
+    - generic [ref=e22] [cursor=pointer]:
+      - generic [ref=e23]:
+        - generic [ref=e24]: C7 — Conteneur 40HC · 20 références optimisées
+        - generic [ref=e25]: 40 pieds HC · 20 种货物 · 创建于 31/05/2026
+      - generic [ref=e28]:
+        - text: "52.24"
+        - text: 69%
+      - button "删除" [ref=e29]:
+        - img [ref=e30]

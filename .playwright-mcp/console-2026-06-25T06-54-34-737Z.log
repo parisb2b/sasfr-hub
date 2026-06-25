@@ -1,0 +1,986 @@
+[     967ms] [LOG] BUILD V40 — 2026-06-25T06:54:35.702Z @ https://cargo.sasfr.com/:4594
+[     969ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[     969ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    1065ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    1065ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    1124ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    1641ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    1710ms] [LOG] BUILD V40 — 2026-06-25T06:54:36.447Z @ https://cargo.sasfr.com/:4594
+[    1711ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    1711ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    1717ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    1717ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    1733ms] [WARNING] [2026-06-25T06:54:36.469Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x22e2b96a transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    1733ms] [ERROR] [2026-06-25T06:54:36.470Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    1740ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    1885ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    1948ms] [LOG] BUILD V40 — 2026-06-25T06:54:36.684Z @ https://cargo.sasfr.com/:4594
+[    1948ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    1949ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    1954ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    1955ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    1983ms] [WARNING] [2026-06-25T06:54:36.719Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x2c5a36c2 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    1983ms] [ERROR] [2026-06-25T06:54:36.719Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    1990ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    2169ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    2239ms] [LOG] BUILD V40 — 2026-06-25T06:54:36.975Z @ https://cargo.sasfr.com/:4594
+[    2239ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    2239ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    2245ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    2245ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    2263ms] [WARNING] [2026-06-25T06:54:37.000Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x65fc67ef transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    2264ms] [ERROR] [2026-06-25T06:54:37.000Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    2274ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    2425ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    2476ms] [LOG] BUILD V40 — 2026-06-25T06:54:37.213Z @ https://cargo.sasfr.com/:4594
+[    2477ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    2477ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    2485ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    2485ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    2500ms] [WARNING] [2026-06-25T06:54:37.236Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x5758169d transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    2500ms] [ERROR] [2026-06-25T06:54:37.236Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    2506ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    2649ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    2741ms] [LOG] BUILD V40 — 2026-06-25T06:54:37.477Z @ https://cargo.sasfr.com/:4594
+[    2742ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    2742ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    2755ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    2756ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    2778ms] [WARNING] [2026-06-25T06:54:37.515Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x6984bff9 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    2779ms] [ERROR] [2026-06-25T06:54:37.515Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    2787ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    2935ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    2998ms] [LOG] BUILD V40 — 2026-06-25T06:54:37.734Z @ https://cargo.sasfr.com/:4594
+[    2999ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    2999ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    3010ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    3011ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    3026ms] [WARNING] [2026-06-25T06:54:37.762Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x33f84649 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    3026ms] [ERROR] [2026-06-25T06:54:37.762Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    3033ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    3184ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    3269ms] [LOG] BUILD V40 — 2026-06-25T06:54:38.005Z @ https://cargo.sasfr.com/:4594
+[    3270ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    3270ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    3285ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    3286ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    3301ms] [WARNING] [2026-06-25T06:54:38.038Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x4e083d0f transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    3302ms] [ERROR] [2026-06-25T06:54:38.038Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    3313ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    3457ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    3543ms] [LOG] BUILD V40 — 2026-06-25T06:54:38.280Z @ https://cargo.sasfr.com/:4594
+[    3544ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    3544ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    3554ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    3555ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    3572ms] [WARNING] [2026-06-25T06:54:38.309Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x17a383a9 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    3573ms] [ERROR] [2026-06-25T06:54:38.309Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    3581ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    3723ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    3779ms] [LOG] BUILD V40 — 2026-06-25T06:54:38.516Z @ https://cargo.sasfr.com/:4594
+[    3781ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    3781ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    3787ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    3787ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    3801ms] [WARNING] [2026-06-25T06:54:38.537Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x8ab95ed0 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    3801ms] [ERROR] [2026-06-25T06:54:38.538Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    3811ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    3957ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    4057ms] [LOG] BUILD V40 — 2026-06-25T06:54:38.793Z @ https://cargo.sasfr.com/:4594
+[    4058ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    4058ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    4066ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    4066ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    4086ms] [WARNING] [2026-06-25T06:54:38.822Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x5c9b2018 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    4086ms] [ERROR] [2026-06-25T06:54:38.822Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    4095ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    4250ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    4309ms] [LOG] BUILD V40 — 2026-06-25T06:54:39.046Z @ https://cargo.sasfr.com/:4594
+[    4310ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    4310ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    4317ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    4317ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    4331ms] [WARNING] [2026-06-25T06:54:39.068Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x7ab94847 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    4332ms] [ERROR] [2026-06-25T06:54:39.068Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    4338ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    4479ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    4533ms] [LOG] BUILD V40 — 2026-06-25T06:54:39.270Z @ https://cargo.sasfr.com/:4594
+[    4534ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    4534ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    4540ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    4540ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    4554ms] [WARNING] [2026-06-25T06:54:39.291Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x5d3185fa transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    4554ms] [ERROR] [2026-06-25T06:54:39.291Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    4562ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    4701ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    4757ms] [LOG] BUILD V40 — 2026-06-25T06:54:39.493Z @ https://cargo.sasfr.com/:4594
+[    4757ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    4757ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    4764ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    4764ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    4777ms] [WARNING] [2026-06-25T06:54:39.513Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x6facdfe4 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    4777ms] [ERROR] [2026-06-25T06:54:39.514Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    4784ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    4920ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    4972ms] [LOG] BUILD V40 — 2026-06-25T06:54:39.709Z @ https://cargo.sasfr.com/:4594
+[    4973ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    4973ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    4988ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    4989ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    5009ms] [WARNING] [2026-06-25T06:54:39.745Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x10baa6ef transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    5009ms] [ERROR] [2026-06-25T06:54:39.746Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    5022ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    5166ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    5219ms] [LOG] BUILD V40 — 2026-06-25T06:54:39.956Z @ https://cargo.sasfr.com/:4594
+[    5220ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    5220ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    5226ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    5226ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    5242ms] [WARNING] [2026-06-25T06:54:39.978Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x6b426f34 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    5242ms] [ERROR] [2026-06-25T06:54:39.979Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    5249ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    5414ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    5462ms] [LOG] BUILD V40 — 2026-06-25T06:54:40.199Z @ https://cargo.sasfr.com/:4594
+[    5463ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    5463ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    5488ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    5488ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    5502ms] [WARNING] [2026-06-25T06:54:40.239Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x4d785baf transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    5503ms] [ERROR] [2026-06-25T06:54:40.239Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    5510ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    5656ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    5730ms] [LOG] BUILD V40 — 2026-06-25T06:54:40.466Z @ https://cargo.sasfr.com/:4594
+[    5731ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    5731ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    5757ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    5757ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    5771ms] [WARNING] [2026-06-25T06:54:40.507Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x6624e679 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    5771ms] [ERROR] [2026-06-25T06:54:40.508Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    5783ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    5934ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    6008ms] [LOG] BUILD V40 — 2026-06-25T06:54:40.745Z @ https://cargo.sasfr.com/:4594
+[    6009ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    6010ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    6020ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    6020ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    6036ms] [WARNING] [2026-06-25T06:54:40.772Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x723ec79d transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    6036ms] [ERROR] [2026-06-25T06:54:40.773Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    6047ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    6182ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    6244ms] [LOG] BUILD V40 — 2026-06-25T06:54:40.980Z @ https://cargo.sasfr.com/:4594
+[    6244ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    6244ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    6251ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    6251ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    6266ms] [WARNING] [2026-06-25T06:54:41.002Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x595433f5 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    6266ms] [ERROR] [2026-06-25T06:54:41.003Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    6277ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    6420ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    6538ms] [LOG] BUILD V40 — 2026-06-25T06:54:41.275Z @ https://cargo.sasfr.com/:4594
+[    6539ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    6540ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    6550ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    6550ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    6569ms] [WARNING] [2026-06-25T06:54:41.305Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x3562bdc1 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    6569ms] [ERROR] [2026-06-25T06:54:41.306Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    6579ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    6725ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    6798ms] [LOG] BUILD V40 — 2026-06-25T06:54:41.534Z @ https://cargo.sasfr.com/:4594
+[    6812ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    6812ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    6890ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    6893ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    6935ms] [WARNING] [2026-06-25T06:54:41.671Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x5cd3b6d6 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    6935ms] [ERROR] [2026-06-25T06:54:41.672Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    6947ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    7116ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    7177ms] [LOG] BUILD V40 — 2026-06-25T06:54:41.913Z @ https://cargo.sasfr.com/:4594
+[    7178ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    7178ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    7184ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    7184ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    7199ms] [WARNING] [2026-06-25T06:54:41.935Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x4978e201 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    7199ms] [ERROR] [2026-06-25T06:54:41.936Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    7208ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    7360ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    7408ms] [LOG] BUILD V40 — 2026-06-25T06:54:42.145Z @ https://cargo.sasfr.com/:4594
+[    7409ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    7410ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    7417ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    7417ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    7444ms] [WARNING] [2026-06-25T06:54:42.180Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x6d7eb11b transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    7444ms] [ERROR] [2026-06-25T06:54:42.181Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    7452ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    7591ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    7648ms] [LOG] BUILD V40 — 2026-06-25T06:54:42.385Z @ https://cargo.sasfr.com/:4594
+[    7649ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    7649ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    7675ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    7675ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    7694ms] [WARNING] [2026-06-25T06:54:42.430Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x4c6126aa transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    7694ms] [ERROR] [2026-06-25T06:54:42.430Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    7704ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    7870ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    7930ms] [LOG] BUILD V40 — 2026-06-25T06:54:42.666Z @ https://cargo.sasfr.com/:4594
+[    7930ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    7931ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    7936ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    7936ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    7962ms] [WARNING] [2026-06-25T06:54:42.699Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x457aeed9 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    7962ms] [ERROR] [2026-06-25T06:54:42.699Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    7972ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    8117ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    8171ms] [LOG] BUILD V40 — 2026-06-25T06:54:42.908Z @ https://cargo.sasfr.com/:4594
+[    8172ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    8172ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    8180ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    8180ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    8194ms] [WARNING] [2026-06-25T06:54:42.931Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x2d7d10a0 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    8195ms] [ERROR] [2026-06-25T06:54:42.931Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    8202ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    8341ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    8393ms] [LOG] BUILD V40 — 2026-06-25T06:54:43.129Z @ https://cargo.sasfr.com/:4594
+[    8394ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    8394ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    8404ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    8404ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    8418ms] [WARNING] [2026-06-25T06:54:43.154Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x13b361fb transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    8418ms] [ERROR] [2026-06-25T06:54:43.154Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    8425ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    8568ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    8617ms] [LOG] BUILD V40 — 2026-06-25T06:54:43.353Z @ https://cargo.sasfr.com/:4594
+[    8618ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    8618ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    8635ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    8635ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    8651ms] [WARNING] [2026-06-25T06:54:43.387Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x3866fc6f transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    8651ms] [ERROR] [2026-06-25T06:54:43.388Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    8662ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    8818ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    8869ms] [LOG] BUILD V40 — 2026-06-25T06:54:43.605Z @ https://cargo.sasfr.com/:4594
+[    8869ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    8870ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    8878ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    8878ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    8901ms] [WARNING] [2026-06-25T06:54:43.637Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x718b718d transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    8901ms] [ERROR] [2026-06-25T06:54:43.638Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    8911ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    9066ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    9115ms] [LOG] BUILD V40 — 2026-06-25T06:54:43.851Z @ https://cargo.sasfr.com/:4594
+[    9115ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    9116ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    9125ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    9128ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    9141ms] [WARNING] [2026-06-25T06:54:43.877Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x8f9b4518 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    9141ms] [ERROR] [2026-06-25T06:54:43.878Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    9148ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    9298ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    9353ms] [LOG] BUILD V40 — 2026-06-25T06:54:44.089Z @ https://cargo.sasfr.com/:4594
+[    9353ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    9353ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    9360ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    9360ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    9374ms] [WARNING] [2026-06-25T06:54:44.110Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x7fcb4c9c transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    9374ms] [ERROR] [2026-06-25T06:54:44.110Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    9381ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    9525ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    9599ms] [LOG] BUILD V40 — 2026-06-25T06:54:44.335Z @ https://cargo.sasfr.com/:4594
+[    9599ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    9599ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    9604ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    9604ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    9616ms] [WARNING] [2026-06-25T06:54:44.352Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x2a63e51a transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    9616ms] [ERROR] [2026-06-25T06:54:44.353Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    9623ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[    9775ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[    9826ms] [LOG] BUILD V40 — 2026-06-25T06:54:44.563Z @ https://cargo.sasfr.com/:4594
+[    9827ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[    9827ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[    9834ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[    9834ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[    9847ms] [WARNING] [2026-06-25T06:54:44.584Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x5c98cdea transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    9848ms] [ERROR] [2026-06-25T06:54:44.584Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[    9856ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   10008ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   10095ms] [LOG] BUILD V40 — 2026-06-25T06:54:44.832Z @ https://cargo.sasfr.com/:4594
+[   10096ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   10096ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   10103ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   10103ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   10120ms] [WARNING] [2026-06-25T06:54:44.857Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x3d6db54c transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   10121ms] [ERROR] [2026-06-25T06:54:44.857Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   10129ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   10276ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   10355ms] [LOG] BUILD V40 — 2026-06-25T06:54:45.092Z @ https://cargo.sasfr.com/:4594
+[   10356ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   10356ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   10366ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   10366ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   10380ms] [WARNING] [2026-06-25T06:54:45.117Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x3f66cc78 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   10381ms] [ERROR] [2026-06-25T06:54:45.118Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   10389ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   10537ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   10598ms] [LOG] BUILD V40 — 2026-06-25T06:54:45.335Z @ https://cargo.sasfr.com/:4594
+[   10599ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   10599ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   10617ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   10617ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   10632ms] [WARNING] [2026-06-25T06:54:45.369Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x44cab03d transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   10633ms] [ERROR] [2026-06-25T06:54:45.369Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   10640ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   10781ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   10832ms] [LOG] BUILD V40 — 2026-06-25T06:54:45.569Z @ https://cargo.sasfr.com/:4594
+[   10833ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   10833ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   10867ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   10868ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   10881ms] [WARNING] [2026-06-25T06:54:45.618Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x6d3d79df transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   10882ms] [ERROR] [2026-06-25T06:54:45.618Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   10889ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   11025ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   11077ms] [LOG] BUILD V40 — 2026-06-25T06:54:45.813Z @ https://cargo.sasfr.com/:4594
+[   11078ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   11078ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   11088ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   11088ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   11102ms] [WARNING] [2026-06-25T06:54:45.839Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x28948f5d transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   11103ms] [ERROR] [2026-06-25T06:54:45.839Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   11110ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   11254ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   11305ms] [LOG] BUILD V40 — 2026-06-25T06:54:46.042Z @ https://cargo.sasfr.com/:4594
+[   11306ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   11306ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   11315ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   11315ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   11331ms] [WARNING] [2026-06-25T06:54:46.067Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x3c946642 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   11331ms] [ERROR] [2026-06-25T06:54:46.068Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   11339ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   11486ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   11555ms] [LOG] BUILD V40 — 2026-06-25T06:54:46.291Z @ https://cargo.sasfr.com/:4594
+[   11555ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   11555ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   11561ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   11561ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   11576ms] [WARNING] [2026-06-25T06:54:46.312Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x7bcbf9f4 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   11576ms] [ERROR] [2026-06-25T06:54:46.313Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   11583ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   11727ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   11778ms] [LOG] BUILD V40 — 2026-06-25T06:54:46.514Z @ https://cargo.sasfr.com/:4594
+[   11778ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   11778ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   11784ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   11784ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   11798ms] [WARNING] [2026-06-25T06:54:46.534Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x11d42723 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   11798ms] [ERROR] [2026-06-25T06:54:46.535Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   11806ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   11938ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   11997ms] [LOG] BUILD V40 — 2026-06-25T06:54:46.733Z @ https://cargo.sasfr.com/:4594
+[   11998ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   11998ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   12007ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   12007ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   12024ms] [WARNING] [2026-06-25T06:54:46.761Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x816e2aef transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   12025ms] [ERROR] [2026-06-25T06:54:46.761Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   12034ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   12180ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   12257ms] [LOG] BUILD V40 — 2026-06-25T06:54:46.994Z @ https://cargo.sasfr.com/:4594
+[   12258ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   12259ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   12267ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   12267ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   12283ms] [WARNING] [2026-06-25T06:54:47.020Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x8c61f6c0 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   12284ms] [ERROR] [2026-06-25T06:54:47.020Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   12293ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   12442ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   12512ms] [LOG] BUILD V40 — 2026-06-25T06:54:47.249Z @ https://cargo.sasfr.com/:4594
+[   12513ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   12513ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   12540ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   12540ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   12553ms] [WARNING] [2026-06-25T06:54:47.290Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x73f7c774 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   12553ms] [ERROR] [2026-06-25T06:54:47.290Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   12560ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   12702ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   12752ms] [LOG] BUILD V40 — 2026-06-25T06:54:47.488Z @ https://cargo.sasfr.com/:4594
+[   12752ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   12753ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   12762ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   12762ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   12790ms] [WARNING] [2026-06-25T06:54:47.527Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x4b7007b0 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   12791ms] [ERROR] [2026-06-25T06:54:47.527Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   12797ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   12945ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   13000ms] [LOG] BUILD V40 — 2026-06-25T06:54:47.737Z @ https://cargo.sasfr.com/:4594
+[   13001ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   13001ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   13011ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   13012ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   13024ms] [WARNING] [2026-06-25T06:54:47.760Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x4679d1af transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   13024ms] [ERROR] [2026-06-25T06:54:47.761Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   13034ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   13203ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   13269ms] [LOG] BUILD V40 — 2026-06-25T06:54:48.005Z @ https://cargo.sasfr.com/:4594
+[   13270ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   13270ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   13276ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   13276ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   13288ms] [WARNING] [2026-06-25T06:54:48.025Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x618f3159 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   13289ms] [ERROR] [2026-06-25T06:54:48.025Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   13296ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   13446ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   13505ms] [LOG] BUILD V40 — 2026-06-25T06:54:48.241Z @ https://cargo.sasfr.com/:4594
+[   13506ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   13506ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   13526ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   13526ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   13537ms] [WARNING] [2026-06-25T06:54:48.274Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x7b9947d4 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   13537ms] [ERROR] [2026-06-25T06:54:48.274Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   13545ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   13675ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   13731ms] [LOG] BUILD V40 — 2026-06-25T06:54:48.468Z @ https://cargo.sasfr.com/:4594
+[   13732ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   13732ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   13737ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   13737ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   13757ms] [WARNING] [2026-06-25T06:54:48.494Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x5310c494 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   13758ms] [ERROR] [2026-06-25T06:54:48.494Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   13765ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   13909ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   13963ms] [LOG] BUILD V40 — 2026-06-25T06:54:48.699Z @ https://cargo.sasfr.com/:4594
+[   13964ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   13964ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   13979ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   13979ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   13995ms] [WARNING] [2026-06-25T06:54:48.731Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x5388d14f transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   13995ms] [ERROR] [2026-06-25T06:54:48.731Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   14002ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   14151ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   14234ms] [LOG] BUILD V40 — 2026-06-25T06:54:48.970Z @ https://cargo.sasfr.com/:4594
+[   14234ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   14234ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   14239ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   14240ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   14254ms] [WARNING] [2026-06-25T06:54:48.991Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x35b48e9a transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   14255ms] [ERROR] [2026-06-25T06:54:48.991Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   14262ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   14398ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   14457ms] [LOG] BUILD V40 — 2026-06-25T06:54:49.194Z @ https://cargo.sasfr.com/:4594
+[   14458ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   14458ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   14476ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   14476ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   14488ms] [WARNING] [2026-06-25T06:54:49.225Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x47cd21ac transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   14489ms] [ERROR] [2026-06-25T06:54:49.225Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   14495ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   14641ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   14693ms] [LOG] BUILD V40 — 2026-06-25T06:54:49.430Z @ https://cargo.sasfr.com/:4594
+[   14694ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   14694ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   14699ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   14699ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   14713ms] [WARNING] [2026-06-25T06:54:49.449Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x327fb5a7 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   14713ms] [ERROR] [2026-06-25T06:54:49.449Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   14723ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   14861ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   14909ms] [LOG] BUILD V40 — 2026-06-25T06:54:49.645Z @ https://cargo.sasfr.com/:4594
+[   14910ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   14910ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   14917ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   14918ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   14935ms] [WARNING] [2026-06-25T06:54:49.671Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x4ce556a6 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   14935ms] [ERROR] [2026-06-25T06:54:49.672Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   14942ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   15083ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   15140ms] [LOG] BUILD V40 — 2026-06-25T06:54:49.877Z @ https://cargo.sasfr.com/:4594
+[   15141ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   15141ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   15148ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   15149ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   15165ms] [WARNING] [2026-06-25T06:54:49.902Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x28f68698 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   15166ms] [ERROR] [2026-06-25T06:54:49.902Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   15175ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   15331ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   15380ms] [LOG] BUILD V40 — 2026-06-25T06:54:50.116Z @ https://cargo.sasfr.com/:4594
+[   15380ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   15380ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   15406ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   15406ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   15418ms] [WARNING] [2026-06-25T06:54:50.154Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x7a89d993 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   15418ms] [ERROR] [2026-06-25T06:54:50.154Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   15425ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   15571ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   15631ms] [LOG] BUILD V40 — 2026-06-25T06:54:50.368Z @ https://cargo.sasfr.com/:4594
+[   15632ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   15633ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   15640ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   15640ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   15660ms] [WARNING] [2026-06-25T06:54:50.397Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x463baa35 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   15661ms] [ERROR] [2026-06-25T06:54:50.397Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   15669ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   15811ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   15860ms] [LOG] BUILD V40 — 2026-06-25T06:54:50.596Z @ https://cargo.sasfr.com/:4594
+[   15861ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   15861ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   15866ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   15866ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   15887ms] [WARNING] [2026-06-25T06:54:50.623Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x2bbac012 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   15887ms] [ERROR] [2026-06-25T06:54:50.624Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   15893ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   16041ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   16094ms] [LOG] BUILD V40 — 2026-06-25T06:54:50.830Z @ https://cargo.sasfr.com/:4594
+[   16095ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   16095ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   16102ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   16102ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   16115ms] [WARNING] [2026-06-25T06:54:50.852Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x129f3667 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   16116ms] [ERROR] [2026-06-25T06:54:50.852Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   16123ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   16260ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   16310ms] [LOG] BUILD V40 — 2026-06-25T06:54:51.047Z @ https://cargo.sasfr.com/:4594
+[   16311ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   16311ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   16331ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   16332ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   16344ms] [WARNING] [2026-06-25T06:54:51.080Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x70cfa51c transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   16344ms] [ERROR] [2026-06-25T06:54:51.081Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   16351ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   16484ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   16537ms] [LOG] BUILD V40 — 2026-06-25T06:54:51.273Z @ https://cargo.sasfr.com/:4594
+[   16538ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   16538ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   16544ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   16544ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   16572ms] [WARNING] [2026-06-25T06:54:51.309Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x1eca9f56 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   16573ms] [ERROR] [2026-06-25T06:54:51.309Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   16580ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   16715ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   16771ms] [LOG] BUILD V40 — 2026-06-25T06:54:51.508Z @ https://cargo.sasfr.com/:4594
+[   16772ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   16772ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   16777ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   16777ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   16791ms] [WARNING] [2026-06-25T06:54:51.527Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x2ff731ac transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   16791ms] [ERROR] [2026-06-25T06:54:51.527Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   16799ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   16935ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   16992ms] [LOG] BUILD V40 — 2026-06-25T06:54:51.729Z @ https://cargo.sasfr.com/:4594
+[   16993ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   16993ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   16999ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   16999ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   17019ms] [WARNING] [2026-06-25T06:54:51.755Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x1a88c4ee transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   17019ms] [ERROR] [2026-06-25T06:54:51.756Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   17027ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   17164ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   17226ms] [LOG] BUILD V40 — 2026-06-25T06:54:51.962Z @ https://cargo.sasfr.com/:4594
+[   17226ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   17227ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   17245ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   17245ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   17261ms] [WARNING] [2026-06-25T06:54:51.998Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x2b53c16b transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   17262ms] [ERROR] [2026-06-25T06:54:51.998Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   17270ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   17412ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   17515ms] [LOG] BUILD V40 — 2026-06-25T06:54:52.252Z @ https://cargo.sasfr.com/:4594
+[   17516ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   17517ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   17524ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   17524ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   17539ms] [WARNING] [2026-06-25T06:54:52.275Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x3491b94e transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   17539ms] [ERROR] [2026-06-25T06:54:52.276Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   17548ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   17695ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   17769ms] [LOG] BUILD V40 — 2026-06-25T06:54:52.505Z @ https://cargo.sasfr.com/:4594
+[   17769ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   17769ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   17777ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   17777ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   17792ms] [WARNING] [2026-06-25T06:54:52.529Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x60e05864 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   17793ms] [ERROR] [2026-06-25T06:54:52.529Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   17799ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   17952ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   18021ms] [LOG] BUILD V40 — 2026-06-25T06:54:52.758Z @ https://cargo.sasfr.com/:4594
+[   18023ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   18023ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   18031ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   18031ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   18044ms] [WARNING] [2026-06-25T06:54:52.780Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x560f64b1 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   18044ms] [ERROR] [2026-06-25T06:54:52.780Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   18052ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   18196ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   18264ms] [LOG] BUILD V40 — 2026-06-25T06:54:53.001Z @ https://cargo.sasfr.com/:4594
+[   18265ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   18265ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   18282ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   18282ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   18294ms] [WARNING] [2026-06-25T06:54:53.030Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x7a717c68 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   18294ms] [ERROR] [2026-06-25T06:54:53.031Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   18303ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   18453ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   18531ms] [LOG] BUILD V40 — 2026-06-25T06:54:53.268Z @ https://cargo.sasfr.com/:4594
+[   18532ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   18532ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   18538ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   18539ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   18554ms] [WARNING] [2026-06-25T06:54:53.290Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x1319d215 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   18554ms] [ERROR] [2026-06-25T06:54:53.291Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   18562ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   18700ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   18758ms] [LOG] BUILD V40 — 2026-06-25T06:54:53.495Z @ https://cargo.sasfr.com/:4594
+[   18759ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   18759ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   18767ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   18768ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   18786ms] [WARNING] [2026-06-25T06:54:53.522Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x6427d372 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   18786ms] [ERROR] [2026-06-25T06:54:53.523Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   18793ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   18932ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   18985ms] [LOG] BUILD V40 — 2026-06-25T06:54:53.721Z @ https://cargo.sasfr.com/:4594
+[   18985ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   18985ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   18997ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   18997ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   19010ms] [WARNING] [2026-06-25T06:54:53.746Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x576e9114 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   19010ms] [ERROR] [2026-06-25T06:54:53.746Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   19017ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   19161ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   19220ms] [LOG] BUILD V40 — 2026-06-25T06:54:53.956Z @ https://cargo.sasfr.com/:4594
+[   19221ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   19221ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   19239ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   19239ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   19264ms] [WARNING] [2026-06-25T06:54:54.001Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x730cab04 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   19265ms] [ERROR] [2026-06-25T06:54:54.001Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   19273ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   19416ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   19552ms] [LOG] BUILD V40 — 2026-06-25T06:54:54.289Z @ https://cargo.sasfr.com/:4594
+[   19553ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   19553ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   19565ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   19565ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   19598ms] [WARNING] [2026-06-25T06:54:54.334Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x8e12fe39 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   19598ms] [ERROR] [2026-06-25T06:54:54.334Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   19605ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   19754ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   19806ms] [LOG] BUILD V40 — 2026-06-25T06:54:54.543Z @ https://cargo.sasfr.com/:4594
+[   19807ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   19807ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   19812ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   19812ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   19830ms] [WARNING] [2026-06-25T06:54:54.566Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x4784ddde transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   19830ms] [ERROR] [2026-06-25T06:54:54.566Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   19837ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   19994ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   20043ms] [LOG] BUILD V40 — 2026-06-25T06:54:54.780Z @ https://cargo.sasfr.com/:4594
+[   20044ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   20044ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   20052ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   20053ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   20068ms] [WARNING] [2026-06-25T06:54:54.804Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x62ace486 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   20068ms] [ERROR] [2026-06-25T06:54:54.805Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   20075ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   20217ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   20274ms] [LOG] BUILD V40 — 2026-06-25T06:54:55.010Z @ https://cargo.sasfr.com/:4594
+[   20275ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   20275ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   20299ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   20300ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   20313ms] [WARNING] [2026-06-25T06:54:55.049Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x3594fa23 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   20313ms] [ERROR] [2026-06-25T06:54:55.050Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   20322ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   20470ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   20520ms] [LOG] BUILD V40 — 2026-06-25T06:54:55.257Z @ https://cargo.sasfr.com/:4594
+[   20521ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   20521ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   20530ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   20530ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   20542ms] [WARNING] [2026-06-25T06:54:55.279Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x1fc4ff85 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   20543ms] [ERROR] [2026-06-25T06:54:55.279Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   20550ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   20693ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   20751ms] [LOG] BUILD V40 — 2026-06-25T06:54:55.487Z @ https://cargo.sasfr.com/:4594
+[   20751ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   20752ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   20757ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   20758ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   20779ms] [WARNING] [2026-06-25T06:54:55.515Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x30fd9ba2 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   20779ms] [ERROR] [2026-06-25T06:54:55.516Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   20786ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   20935ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   20995ms] [LOG] BUILD V40 — 2026-06-25T06:54:55.732Z @ https://cargo.sasfr.com/:4594
+[   20996ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   20996ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   21004ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   21004ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   21017ms] [WARNING] [2026-06-25T06:54:55.753Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x54eeedf7 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   21017ms] [ERROR] [2026-06-25T06:54:55.754Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   21028ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   21171ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   21228ms] [LOG] BUILD V40 — 2026-06-25T06:54:55.964Z @ https://cargo.sasfr.com/:4594
+[   21229ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   21229ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   21248ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   21248ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   21263ms] [WARNING] [2026-06-25T06:54:55.999Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x3d5d527d transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   21263ms] [ERROR] [2026-06-25T06:54:56.000Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   21274ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   21419ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   21479ms] [LOG] BUILD V40 — 2026-06-25T06:54:56.216Z @ https://cargo.sasfr.com/:4594
+[   21480ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   21480ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   21487ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   21488ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   21501ms] [WARNING] [2026-06-25T06:54:56.238Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x554d8541 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   21502ms] [ERROR] [2026-06-25T06:54:56.238Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   21512ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   21650ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   21702ms] [LOG] BUILD V40 — 2026-06-25T06:54:56.438Z @ https://cargo.sasfr.com/:4594
+[   21702ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   21702ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   21713ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   21713ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   21728ms] [WARNING] [2026-06-25T06:54:56.464Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x1741aaa4 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   21728ms] [ERROR] [2026-06-25T06:54:56.465Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   21736ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   21870ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   21933ms] [LOG] BUILD V40 — 2026-06-25T06:54:56.670Z @ https://cargo.sasfr.com/:4594
+[   21934ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   21934ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   21950ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   21950ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   21966ms] [WARNING] [2026-06-25T06:54:56.702Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x636ddbd1 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   21966ms] [ERROR] [2026-06-25T06:54:56.703Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   21973ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   22104ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   22174ms] [LOG] BUILD V40 — 2026-06-25T06:54:56.911Z @ https://cargo.sasfr.com/:4594
+[   22175ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   22176ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   22197ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   22197ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   22211ms] [WARNING] [2026-06-25T06:54:56.948Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x5e5ac681 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   22211ms] [ERROR] [2026-06-25T06:54:56.948Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   22221ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   22354ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   22414ms] [LOG] BUILD V40 — 2026-06-25T06:54:57.150Z @ https://cargo.sasfr.com/:4594
+[   22415ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   22415ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   22423ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   22423ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   22437ms] [WARNING] [2026-06-25T06:54:57.174Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x3fe0614c transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   22438ms] [ERROR] [2026-06-25T06:54:57.174Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   22448ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   22587ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   22638ms] [LOG] BUILD V40 — 2026-06-25T06:54:57.375Z @ https://cargo.sasfr.com/:4594
+[   22639ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   22640ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   22646ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   22646ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   22660ms] [WARNING] [2026-06-25T06:54:57.397Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x7ef76847 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   22661ms] [ERROR] [2026-06-25T06:54:57.397Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   22669ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   22804ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   22858ms] [LOG] BUILD V40 — 2026-06-25T06:54:57.594Z @ https://cargo.sasfr.com/:4594
+[   22859ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   22859ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   22868ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   22868ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   22882ms] [WARNING] [2026-06-25T06:54:57.619Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x63e0bd13 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   22883ms] [ERROR] [2026-06-25T06:54:57.619Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   22892ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   23026ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   23092ms] [LOG] BUILD V40 — 2026-06-25T06:54:57.829Z @ https://cargo.sasfr.com/:4594
+[   23093ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   23093ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   23146ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   23146ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   23159ms] [WARNING] [2026-06-25T06:54:57.896Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x890c5371 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   23160ms] [ERROR] [2026-06-25T06:54:57.896Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   23169ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   23326ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   23374ms] [LOG] BUILD V40 — 2026-06-25T06:54:58.111Z @ https://cargo.sasfr.com/:4594
+[   23375ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   23375ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   23382ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   23382ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   23396ms] [WARNING] [2026-06-25T06:54:58.132Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x83adf13d transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   23396ms] [ERROR] [2026-06-25T06:54:58.133Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   23403ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   23547ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   23596ms] [LOG] BUILD V40 — 2026-06-25T06:54:58.332Z @ https://cargo.sasfr.com/:4594
+[   23596ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   23596ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   23604ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   23604ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   23623ms] [WARNING] [2026-06-25T06:54:58.360Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x31612fe4 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   23624ms] [ERROR] [2026-06-25T06:54:58.360Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   23631ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   23762ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   23841ms] [LOG] BUILD V40 — 2026-06-25T06:54:58.578Z @ https://cargo.sasfr.com/:4594
+[   23842ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   23842ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   23850ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   23850ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   23861ms] [WARNING] [2026-06-25T06:54:58.598Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x6462fad7 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   23862ms] [ERROR] [2026-06-25T06:54:58.598Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   23871ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   24018ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   24083ms] [LOG] BUILD V40 — 2026-06-25T06:54:58.819Z @ https://cargo.sasfr.com/:4594
+[   24083ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   24083ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   24107ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   24107ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   24123ms] [WARNING] [2026-06-25T06:54:58.860Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x1a54a524 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   24124ms] [ERROR] [2026-06-25T06:54:58.860Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   24132ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   24271ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   24328ms] [LOG] BUILD V40 — 2026-06-25T06:54:59.064Z @ https://cargo.sasfr.com/:4594
+[   24329ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   24329ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   24334ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   24335ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   24350ms] [WARNING] [2026-06-25T06:54:59.087Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x8034a3c9 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   24350ms] [ERROR] [2026-06-25T06:54:59.087Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   24359ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   24508ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   24566ms] [LOG] BUILD V40 — 2026-06-25T06:54:59.302Z @ https://cargo.sasfr.com/:4594
+[   24566ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   24566ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   24576ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   24576ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   24589ms] [WARNING] [2026-06-25T06:54:59.325Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x70e11ac0 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   24589ms] [ERROR] [2026-06-25T06:54:59.326Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   24596ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   24735ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   24808ms] [LOG] BUILD V40 — 2026-06-25T06:54:59.544Z @ https://cargo.sasfr.com/:4594
+[   24809ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   24809ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   24818ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   24818ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   24832ms] [WARNING] [2026-06-25T06:54:59.568Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x3f40db4e transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   24832ms] [ERROR] [2026-06-25T06:54:59.569Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   24839ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   24976ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   25042ms] [LOG] BUILD V40 — 2026-06-25T06:54:59.778Z @ https://cargo.sasfr.com/:4594
+[   25043ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   25043ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   25070ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   25070ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   25096ms] [WARNING] [2026-06-25T06:54:59.833Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x53d0ae58 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   25097ms] [ERROR] [2026-06-25T06:54:59.833Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   25107ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   25254ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   25322ms] [LOG] BUILD V40 — 2026-06-25T06:55:00.059Z @ https://cargo.sasfr.com/:4594
+[   25323ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   25324ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   25330ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   25330ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   25345ms] [WARNING] [2026-06-25T06:55:00.081Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x2e2f1d84 transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   25345ms] [ERROR] [2026-06-25T06:55:00.082Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   25354ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0
+[   25485ms] [LOG] ✅ Auth persistence: LOCAL @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:358
+[   25542ms] [LOG] BUILD V40 — 2026-06-25T06:55:00.278Z @ https://cargo.sasfr.com/:4594
+[   25543ms] [LOG] ♻ C7 mis à jour (20 colis) @ https://cargo.sasfr.com/:4698
+[   25543ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4713
+[   25551ms] [WARNING] ⚠️ Aucune session — redirection immédiate vers hub central @ https://cargo.sasfr.com/:212
+[   25551ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4737
+[   25565ms] [WARNING] [2026-06-25T06:55:00.301Z]  @firebase/firestore: Firestore (9.23.0): WebChannelConnection RPC 'Listen' stream 0x78a05a6a transport errored: Xn @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   25565ms] [ERROR] [2026-06-25T06:55:00.302Z]  @firebase/firestore: Firestore (9.23.0): Could not reach Cloud Firestore backend. Connection failed 1 times. Most recent error: FirebaseError: [code=unavailable]: The operation could not be completed
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend. @ https://cargo.sasfr.com/libs/firebase-firestore-compat.js:0
+[   25577ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.sasfr.com/?redirect=https%3A%2F%2Fcargo.sasfr.com%2F:0

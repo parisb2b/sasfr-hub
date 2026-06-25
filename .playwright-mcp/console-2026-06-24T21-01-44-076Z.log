@@ -1,0 +1,10 @@
+[    1283ms] [LOG] BUILD V40 — 2026-06-24T21:01:45.351Z @ https://cargo.sasfr.com/:4568
+[    1289ms] [LOG] ✅ C7 injecté — 20 colis Excel, 40HC @ https://cargo.sasfr.com/:4673
+[    1290ms] [LOG] 💾 localStorage sauvegardé — 1 sessions @ https://cargo.sasfr.com/:4687
+[    1426ms] [WARNING] ⚠️ Aucune session, tentative mode invité... @ https://cargo.sasfr.com/:212
+[    1426ms] [LOG] Firebase: connexion Firestore... @ https://cargo.sasfr.com/:4711
+[    1589ms] [ERROR] Firebase get() error: permission-denied Missing or insufficient permissions. @ https://cargo.sasfr.com/:4761
+[    1589ms] [ERROR] Firebase onSnapshot error: permission-denied Missing or insufficient permissions. @ https://cargo.sasfr.com/:4781
+[    1590ms] [WARNING] ⚠ REGLES Firestore: permission-denied Missing or insufficient permissions. — repli actif (créer règles Firestore pour cargo_config) @ https://cargo.sasfr.com/:4734
+[    1852ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDuMelJjjPWDnJOj8_rnehddcQxRMWr058:0
+[    1853ms] [WARNING] ⚠️ Mode invité indisponible: auth/admin-restricted-operation @ https://cargo.sasfr.com/:219

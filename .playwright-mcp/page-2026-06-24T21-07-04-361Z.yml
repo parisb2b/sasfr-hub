@@ -1,0 +1,29 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - img [ref=e5]
+    - generic [ref=e10]: Chantier Tracker
+    - generic [ref=e11]: dm.sasfr.com
+  - generic [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e15]: Adresse email
+        - textbox "Adresse email" [ref=e16]:
+          - /placeholder: vous@exemple.com
+          - text: parisb2b@gmail.com
+      - generic [ref=e17]:
+        - generic [ref=e18]: Mot de passe
+        - textbox "Mot de passe" [ref=e19]:
+          - /placeholder: ••••••••
+          - text: "@iP$$118811"
+        - link "Mot de passe oublié ?" [ref=e20] [cursor=pointer]:
+          - /url: "#"
+      - generic [ref=e21] [cursor=pointer]:
+        - checkbox "Se souvenir de moi" [checked] [ref=e22]
+        - text: Se souvenir de moi
+      - button "Se connecter" [ref=e23] [cursor=pointer]
+    - generic [ref=e24]: ou
+    - button "Recevoir un lien de connexion" [ref=e25] [cursor=pointer]:
+      - img [ref=e26]
+      - text: Recevoir un lien de connexion
+    - button "Créer un compte" [ref=e29] [cursor=pointer]
+  - generic [ref=e30]: Pas de compte ? Créez-en un ou contactez l'administrateur.
